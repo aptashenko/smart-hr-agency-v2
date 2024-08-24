@@ -5,6 +5,8 @@
 @import "./components/animations";
 @import "./mixins/mixins";
 @import './reset.min.css';
-@import "./vue-transitions.css";
-
+@import "./components/vue-transitions";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 

@@ -17,3 +17,13 @@
 .from-top-leave-to {
   transform: translateY(-100%);
 }
+
+.from-right-enter-active,
+.from-right-leave-active {
+  transition: all 0.5s ease;
+}
+
+.from-right-enter-from,
+.from-right-leave-to {
+  transform: translateX(100%);
+}

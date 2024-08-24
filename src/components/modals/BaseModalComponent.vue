@@ -7,7 +7,7 @@
     tabindex="-1"
     @click.self="handleSelfClick"
   >
-    <transition v-bind="globalModalState.props.transition" @after-leave="closeModal">
+    <transition v-bind="globalModalState.props.transition" @after-leave="handleAfterLeave">
      <component
       v-if="globalModalState.showContent"
       :is="globalModalState.component"
@@ -29,6 +29,10 @@ const keydownListener = (event) => {
 const handleSelfClick = () => {
   if (globalModalState.props.selfClick) toggleComponent();
 };
+
+const handleAfterLeave = () => {
+  setTimeout(closeModal, 500)
+}
 
 onMounted(() => {
   document.addEventListener('keydown', keydownListener);

@@ -31,10 +31,7 @@ import { ref } from 'vue'
 import states from '../../common/input-fields/index.js'
 import validation from '@/common/validation-rules/index.js'
 import InputPhone from "@/components/ui/InputPhone.vue"
-import { useAuthStore } from "@/stores/auth-store.js"
 const emit = defineEmits(['on-submit'])
-
-const auth = useAuthStore()
 
 const formValues = ref({
  phone: { ...states.phone },
@@ -47,7 +44,6 @@ const validationRules = {
 }
 
 const onSubmit = async payload => {
- auth.signIn(payload, formValues.value)
  emit('on-submit', payload)
 }
 </script>

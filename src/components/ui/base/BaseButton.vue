@@ -51,41 +51,8 @@ const isDisabled = computed(() =>
 const mainClass = computed(
   () =>
     ({
-      button: 'base-button',
-      icon: 'base-button-icon',
+      button: 'rounded-[200px] bg-[#000] py-[5px] px-[20px] text-[#fff] border-[1px] border-transparent text-[16px]',
+      inverted: 'rounded-[200px] bg-[#fff] py-[5px] px-[20px] text-[#000] border-[1px] border-transparent text-[16px]',
     })[props.type]
 );
 </script>
-
-<style lang="scss" scoped>
-.base-button {
-  padding: 8px;
-  background: #eca36e;
-  color: #fff;
-  text-align: center;
-  transition: all 0.25s ease;
-  cursor: pointer;
-
-  &[disabled='true'] {
-    opacity: 0.6;
-    pointer-events: none !important;
-  }
-}
-
-.base-button-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-
-  border: none;
-  border-radius: 6px;
-  background: gray;
-  cursor: pointer;
-
-  &[disabled='true'] {
-    opacity: 0.6;
-    pointer-events: none !important;
-  }
-}
-</style>

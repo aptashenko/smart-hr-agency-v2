@@ -1,4 +1,4 @@
-import { defineAsyncComponent, reactive } from 'vue';
+import {defineAsyncComponent, reactive, watch} from 'vue';
 import MODALS from '@/components/modals/components/enums'
 const defaultProps = {
   transition: { name: 'fade' },
@@ -24,9 +24,9 @@ export function useModals() {
     globalModalState['props'] = defaultProps;
   };
 
-  const openBaseModal = props => {
-    openModal(MODALS.base.component, {...MODALS.base.props, ...props})
+  const openMobileMenu = props => {
+    openModal(MODALS.menu.component, {...MODALS.menu.props, ...props})
   }
 
-  return { globalModalState, openModal, closeModal, openBaseModal, toggleComponent };
+  return { globalModalState, openModal, closeModal, openMobileMenu, toggleComponent };
 }
