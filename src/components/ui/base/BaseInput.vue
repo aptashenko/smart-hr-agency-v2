@@ -1,13 +1,17 @@
 <template>
   <div class="pt-[28px] pb-[10px]">
-    <div v-if="!textArea || passwordInput" class="w-full relative border-b-[1px] border-[#FFFFFF33] pb-[2px]" :class="{'!border-[#FCFF7E]': isFocused}">
+    <div
+        v-if="!textArea || passwordInput"
+        class="w-full relative border-b-[1px]  pb-[2px]"
+        :class="[inverted ? 'border-[#00000033]' : 'border-[#FFFFFF33]', {[inverted ? '!border-[#55F6C6]' : '!border-[#FCFF7E]']: isFocused}]">
       <input
         :name="name"
         :id="name"
         :type="inputType"
         v-model="value"
         :placeholder="placeholder"
-        class="w-full bg-transparent outline-0 text-[#fff] text-[18px] font-[400] leading-[1.48]"
+        class="w-full bg-transparent outline-0 text-[18px] font-[400] leading-[1.48]"
+        :class="[inverted ? 'text-[#000]' : 'text-[#fff]']"
         v-on:[focusEvent]="changeEvent"
       />
       <svg-icon
@@ -19,8 +23,8 @@
       />
       <label
           :for="name"
-          class="absolute pointer-events-none transition duration-300 origin-left top-0 left-0 text-[18px] font-[400] leading-[1.48] text-[#fff] opacity-40"
-          :class="{'label-peer !pointer-events-auto': isFocused || modelValue}"
+          class="absolute pointer-events-none transition duration-300 origin-left top-0 left-0 text-[18px] font-[400] leading-[1.48] opacity-40"
+          :class="[inverted ? 'text-[#000]' : 'text-[#fff]', {'label-peer !pointer-events-auto': isFocused || modelValue}]"
       >
         {{ label }}
       </label>
@@ -36,7 +40,7 @@
     />
 
     <transition name="fade" mode="out-in">
-      <p v-show="error" class="text-[#fff] text-[12px] text-error">
+      <p v-show="error" class="text-[12px] text-error">
         {{ error }}
       </p>
     </transition>
@@ -54,6 +58,10 @@ const props = defineProps({
   type: {
     type: String,
     default: 'text',
+  },
+  inverted: {
+    type: Boolean,
+    default: false,
   },
   textArea: {
     type: Boolean,

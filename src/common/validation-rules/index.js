@@ -54,6 +54,11 @@ const telegram = {
  maxLength: maxLength(15),
 }
 
+const linkedin = {
+ minLength: minLength(1),
+ maxLength: maxLength(15),
+}
+
 export default {
  password: {value: password},
  phone: {value: phone},
@@ -62,5 +67,6 @@ export default {
  lName: {value: lName},
  companyName: {value: companyName},
  message: {value: message},
- telegram: {value: telegram}
+ telegram: {value: telegram},
+ linkedin: {value: linkedin}
 }

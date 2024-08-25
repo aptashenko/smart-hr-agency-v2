@@ -51,8 +51,8 @@ const isDisabled = computed(() =>
 const mainClass = computed(
   () =>
     ({
-      button: 'rounded-[200px] bg-[#000] py-[5px] px-[20px] text-[#fff] border-[1px] border-[#000] text-[16px]',
-      inverted: 'rounded-[200px] bg-[#fff] py-[5px] px-[20px] text-[#000] border-[1px] border-[#fff] text-[16px]',
+      button: 'rounded-[200px] bg-[#000] py-[5px] px-[20px] text-[#fff] border-[1px] border-[#000] text-[16px] min-[768px]:text-[24px]',
+      inverted: 'rounded-[200px] bg-[#fff] py-[5px] px-[20px] text-[#000] border-[1px] border-[#fff] text-[16px] min-[768px]:text-[24px]',
     })[props.type]
 );
 </script>

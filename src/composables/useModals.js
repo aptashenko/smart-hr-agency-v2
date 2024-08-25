@@ -32,5 +32,9 @@ export function useModals() {
     openModal(MODALS.findTalent.component, {...MODALS.findTalent.props, ...props})
   }
 
-  return { globalModalState, openModal, closeModal, openMobileMenu, openFindTalent, toggleComponent };
+  const openGetJob = props => {
+    openModal(MODALS.getJob.component, {...MODALS.getJob.props, ...props})
+  }
+
+  return { globalModalState, openModal, closeModal, openMobileMenu, openGetJob, openFindTalent, toggleComponent };
 }

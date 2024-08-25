@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="flex items-center gap-[20px] justify-center mb-[20px]">
-      <label v-for="(item, idx) of texts" class="text-[18px] leading-[1.48] font-[700]" :class="{'opacity-50 !font-[400]': product !== idx}">
+      <label v-for="(item, idx) of texts" class="text-[18px] leading-[1.48] font-[700] cursor-pointer min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]" :class="{'opacity-50 !font-[400]': product !== idx}">
         {{item.label}}
         <input hidden v-model="product" :value="idx" type="radio" name="product" />
       </label>
     </div>
 
-    <p class="text-center text-[16px] font-[400] leading-[1.48] opacity-50 mb-[20px]">
+    <p class="text-center text-[16px] font-[400] leading-[1.48] opacity-50 mb-[20px] min-[768px]:text-[24px]">
       {{texts[product].text}}
     </p>
     <base-button class="mx-auto block">

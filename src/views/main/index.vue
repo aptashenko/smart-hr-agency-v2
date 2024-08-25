@@ -1,7 +1,7 @@
 <template>
-  <section class="px-[20px] pt-[56px]">
-    <h1 class="text-[55px] font-[600] tracking-[-2.24px] leading-[1.1]">
-      Connecting <br/>
+  <section class="px-[20px] pt-[56px] min-[768px]:pt-[95px] min-[768px]:max-w-[1000px] mx-auto">
+    <h1 class="text-[55px] font-[600] tracking-[-2.24px] leading-[1.1] min-[768px]:text-[80px] min-[768px]:text-center">
+      Connecting <br class="min-[768px]:hidden"/>
       <svg-icon name="top" class="inline" />
       top
       <svg-icon name="talent" class="inline" />
@@ -11,26 +11,26 @@
       <svg-icon name="employers" class="inline" />
       employers
     </h1>
-    <h2 class="text-[16px] leading-[1.48] opacity-50 mt-[24px]">
+    <h2 class="text-[16px] leading-[1.48] opacity-50 mt-[24px] min-[768px]:text-[24px] min-[768px]:text-center max-w-[800px] mx-auto min-[768px]:mt-[32px]">
       We select specialists who move businesses forward. We organize everything so that the hiring process for you takes place with minimal time and effort. We help companies attract irreplaceable employees, and talented specialists find top employers.
     </h2>
-    <div class="flex items-center gap-[16px] mt-[24px]">
-      <base-button>
+    <div class="flex items-center gap-[16px] mt-[24px] min-[768px]:justify-center min-[768px]:mt-[32px]">
+      <base-button @click="openFindTalent">
         Find talent
       </base-button>
-      <base-button type="inverted">
+      <base-button type="inverted" @click="openGetJob">
         Get a job
       </base-button>
     </div>
   </section>
-  <section class="px-[20px] mt-[100px]">
-    <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px]">
+  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px]">
+    <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]">
       Whom we find
     </h2>
-    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[15px]">
+    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[15px] min-[768px]:w-[488px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
       We find people who are able to grow, move forward, and scale your business
     </p>
-    <div class="pb-[260px]">
+    <div class="pb-[260px] min-[768px]:hidden">
       <div class="relative max-w-[335px] top-[25px]">
         <svg width="248" height="798" viewBox="0 0 248 798" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="32" height="32" rx="16" fill="black"/>
@@ -239,15 +239,18 @@
         </div>
       </div>
     </div>
+    <div class="relative max-[768px]:hidden px-[20px] top-[-70px]">
+      <img src="@/assets/images/structure_1.png"/>
+    </div>
   </section>
-  <section class="px-[20px] mt-[100px]">
-    <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px]">
+  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px]">
+    <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]">
       How it works
     </h2>
-    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[40px]">
+    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[40px] min-[768px]:w-[692px] min-[768px]:mb-[48px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
       Impeccable service. Minimum effort and time on your part—maximum result
     </p>
-    <div class="relative max-w-[335px] pb-[100px]">
+    <div class="relative max-w-[335px] pb-[100px] min-[768px]:hidden">
       <svg width="290" height="733" viewBox="0 0 290 733" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M170 146C170 137.163 177.163 130 186 130C194.837 130 202 137.163 202 146C202 154.837 194.837 162 186 162C177.163 162 170 154.837 170 146Z" fill="white"/>
         <path d="M182.403 151.5C182.403 150.781 182.489 150.151 182.662 149.61C182.835 149.064 183.073 148.583 183.376 148.168C183.679 147.753 184.029 147.386 184.426 147.069C184.827 146.752 185.252 146.467 185.7 146.215C185.966 146.066 186.216 145.907 186.449 145.739C186.682 145.571 186.871 145.382 187.016 145.172C187.161 144.962 187.233 144.719 187.233 144.444C187.233 144.075 187.109 143.784 186.862 143.569C186.619 143.35 186.293 143.24 185.882 143.24C185.453 143.24 185.098 143.343 184.818 143.548C184.543 143.749 184.328 144.029 184.174 144.388L182.557 143.653C182.818 143.009 183.248 142.496 183.845 142.113C184.447 141.726 185.119 141.532 185.861 141.532C186.533 141.532 187.105 141.66 187.576 141.917C188.052 142.169 188.414 142.512 188.661 142.946C188.913 143.375 189.039 143.861 189.039 144.402C189.039 144.971 188.936 145.447 188.731 145.83C188.53 146.213 188.255 146.544 187.905 146.824C187.56 147.104 187.172 147.37 186.743 147.622C186.318 147.874 185.957 148.107 185.658 148.322C185.364 148.532 185.124 148.751 184.937 148.98C184.75 149.204 184.61 149.463 184.517 149.757H189.123V151.5H182.403Z" fill="black"/>
@@ -286,58 +289,61 @@
         You pay for our services only after the employee has successfully worked for <span class="text-[#000] font-[700]">2 weeks.</span>
       </p>
     </div>
+    <div class="relative max-[768px]:hidden px-[20px]">
+      <img src="@/assets/images/structure_2.png" />
+    </div>
   </section>
-  <section class="px-[20px] mt-[100px]">
-    <action-menu />
+  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
+    <action-menu class="min-[768px]:max-w-[800px] mx-auto" />
   </section>
-  <section class="px-[20px] mt-[100px]">
-    <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px]">
-      How it works
+  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
+    <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] max-w-[590px] min-[768px]:tracking-[-2.56px] min-[768px]:text-[64px]">
+      If you don’t need a turnkey selection
     </h2>
-    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[40px]">
-      Impeccable service. Minimum effort and time on your part—maximum result
+    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[40px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px] min-[768px]:mb-[48px]">
+      We flexibly adapt to your needs and tasks
     </p>
-    <div class="flex flex-col gap-[24px]">
+    <div class="flex max-[768px]:flex-col gap-[24px] min-[768px]:gap-[120px]">
       <div>
         <svg-icon name="recruiter" class="mb-[12px]" />
-        <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px]">
+        <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px] min-[768px]:text-[18px]">
           Recruiter on a retainer
         </h2>
-        <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
+        <p class="text-[12px] font-[400] leading-[1.48] opacity-50 min-[768px]:text-[16px]">
           We provide an experienced recruiter who will strengthen your team, connect to internal hiring processes and help find the right employees or assemble a startup/department/team.
         </p>
       </div>
       <div>
         <svg-icon name="hr" class="mb-[12px]" />
-        <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px]">
+        <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px] min-[768px]:text-[18px]">
           HR on a retainer
         </h2>
-        <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
+        <p class="text-[12px] font-[400] leading-[1.48] opacity-50 min-[768px]:text-[16px]">
           We assign a specialist who will establish HR processes, set up a CRM system, and digitize the corporate culture. From hiring and onboarding employees to holding corporate events and ordering merch - anything to suit your needs and requests.
         </p>
       </div>
       <div>
         <svg-icon name="sourcing" class="mb-[12px]" />
-        <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px]">
+        <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px] min-[768px]:text-[18px]">
           Sourcing
         </h2>
-        <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
+        <p class="text-[12px] font-[400] leading-[1.48] opacity-50 min-[768px]:text-[16px]">
           We will provide 300 resumes for your request, from which you can choose suitable candidates yourself. Before getting to you, each candidate goes through our verification system, 4 psychological tests and several stages of preliminary interviews.        </p>
       </div>
     </div>
   </section>
-  <section class="px-[20px] mt-[100px] pb-[100px]">
-    <h2 class="text-[56px] font-[600] tracking-[-2.24px] leading-[1.1] text-center mb-[8px]">
+  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] pb-[100px] min-[768px]:pb-[240px] min-[768px]:mt-[160px]">
+    <h2 class="text-[56px] font-[600] tracking-[-2.24px] leading-[1.1] text-center mb-[8px] min-[768px]:text-[80px] min-[768px]:tracking-[-3.2px]">
       Get in touch
     </h2>
-    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 text-center">
+    <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 text-center min-[768px]:max-w-[985px] mx-auto min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
       We will contact you within 24 hours and begin work on finding employees for your business
     </p>
     <div class="flex items-center justify-center gap-[20px] mt-[24px]">
-      <base-button>
+      <base-button @click="openFindTalent">
         Find talent
       </base-button>
-      <base-button type="inverted">
+      <base-button type="inverted" @click="openGetJob">
         Get a job
       </base-button>
     </div>
@@ -348,4 +354,7 @@
 import SvgIcon from "@/components/shared/SvgIcon.vue";
 import BaseButton from "@/components/ui/base/BaseButton.vue";
 import ActionMenu from "@/components/ActionMenu.vue";
+import {useModals} from "@/composables/useModals.js";
+
+const { openFindTalent, openGetJob } = useModals()
 </script>

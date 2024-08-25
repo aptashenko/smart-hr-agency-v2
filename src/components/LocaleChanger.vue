@@ -11,7 +11,7 @@
     </button>
     <div v-if="langsList" class="">
       <div class="fixed top-0 left-0 h-[100vh] w-[100vw] z-[1]" @click="toggleLangs" />
-      <ul class="z-[2] bg-[#fff] rounded-[12px] absolute bottom-[150%] p-[8px]">
+      <ul class="z-[2] bg-[#fff] rounded-[12px] absolute p-[8px]" :class="[dropdown === 'top' ? 'bottom-[150%]' : 'top-[150%] min-w-[135px] right-0']">
         <li class="flex items-center justify-start bg-[#00000014] rounded-[4px] py-[2px] px-[8px]">
           <button class="text-[14px] text-[#000]">
             English
@@ -35,6 +35,9 @@
 import SvgIcon from "@/components/shared/SvgIcon.vue";
 import {ref} from "vue";
 const langsList = ref(false);
+defineProps({
+  dropdown: {type: String, default: 'top'}
+})
 
 const toggleLangs = () => {
   langsList.value = !langsList.value;

@@ -46,6 +46,14 @@ const telegram = {
  serverError: ''
 }
 
+const linkedin = {
+ id: 'linkedin',
+ value: '',
+ valid: false,
+ validationError: '',
+ serverError: ''
+}
+
 
 
 export default {
@@ -54,5 +62,6 @@ export default {
  email,
  lName,
  companyName,
+ linkedin,
  telegram
 }
