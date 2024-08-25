@@ -1,15 +1,9 @@
 {
   "lines": {
-    "line_1": "This service is powered by the GPT Chat AI. The bot may fail. Remember to read the relevant information here privacy policy and consult it before using the service.",
-    "line_2": "© {year}. ABCMobile OÜ",
-    "line_3": "Customer care {email}",
-    "line_4": "Harju maakond, Tallinn, Peterburi tee 71-318, 11415, Estonia.",
-    "line_5": "See our {terms} and {privacy}",
-    "email": "support{'@'}abcmobile.com",
-    "terms": "Terms and Conditions",
-    "privacy": "Privacy Policy"
-  },
-  "support": "Support",
-  "terms": "Terms and Conditions",
-  "privacy": "Privacy Policy"
+    "line_1": "A Better Career OÜ",
+    "line_2": "Address: Harju maakond, Tallinn, Lasnamäe linnaosa, Kivila tn 21-101, 13918",
+    "line_3": "Registration number: 17035965",
+    "line_4": "VAT ID: EE102763229",
+    "line_5": "Email: hello{'@'}smarthr.agency"
+  }
 }

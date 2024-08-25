@@ -1,13 +1,13 @@
-const phone = {
- id: 'phone',
+const fName = {
+ id: 'first-name',
  value: '',
  valid: false,
  validationError: '',
  serverError: ''
 }
 
-const password = {
- id: 'password',
+const lName = {
+ id: 'last-name',
  value: '',
  valid: false,
  validationError: '',
@@ -22,16 +22,24 @@ const email = {
  serverError: ''
 }
 
-const name = {
- id: 'name',
+const companyName = {
+ id: 'company-name',
  value: '',
  valid: false,
  validationError: '',
  serverError: ''
 }
 
-const message = {
- id: 'message',
+const phone = {
+ id: 'phone',
+ value: '',
+ valid: false,
+ validationError: '',
+ serverError: ''
+}
+
+const telegram = {
+ id: 'telegram',
  value: '',
  valid: false,
  validationError: '',
@@ -42,8 +50,9 @@ const message = {
 
 export default {
  phone,
- password,
+ fName,
  email,
- name,
- message
+ lName,
+ companyName,
+ telegram
 }

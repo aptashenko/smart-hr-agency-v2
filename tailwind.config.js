@@ -13,6 +13,8 @@ export default {
         },
         colors: {
             primary: '#202430',
+            error: '#FF4F4F',
+            transparent: 'transparent',
         },
         extend: {
             borderRadius: {

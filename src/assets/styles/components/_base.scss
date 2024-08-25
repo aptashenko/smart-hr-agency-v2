@@ -4,5 +4,9 @@ html {
 
 body {
     margin: 0;
-    background: #55F6C6;
+    background: linear-gradient(180deg, #FCFF7E 13.38%, #55F6C6 33.3%, #7EF7FF 66%, #FDB3F5 90%);
+}
+
+.label-peer {
+    transform: translateY(-22px) scale(0.7) !important;
 }

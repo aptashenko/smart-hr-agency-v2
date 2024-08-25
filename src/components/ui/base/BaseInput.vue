@@ -1,16 +1,13 @@
 <template>
-  <div>
-    <label :for="name">
-      {{ label }}
-    </label>
-
-    <div v-if="!textArea || passwordInput" class="input-wrapper">
+  <div class="pt-[28px] pb-[10px]">
+    <div v-if="!textArea || passwordInput" class="w-full relative border-b-[1px] border-[#FFFFFF33] pb-[2px]" :class="{'!border-[#FCFF7E]': isFocused}">
       <input
         :name="name"
         :id="name"
         :type="inputType"
         v-model="value"
         :placeholder="placeholder"
+        class="w-full bg-transparent outline-0 text-[#fff] text-[18px] font-[400] leading-[1.48]"
         v-on:[focusEvent]="changeEvent"
       />
       <svg-icon
@@ -20,6 +17,13 @@
         class="eye-btn"
         @click="togglePasswordVisibility"
       />
+      <label
+          :for="name"
+          class="absolute pointer-events-none transition duration-300 origin-left top-0 left-0 text-[18px] font-[400] leading-[1.48] text-[#fff] opacity-40"
+          :class="{'label-peer !pointer-events-auto': isFocused || modelValue}"
+      >
+        {{ label }}
+      </label>
     </div>
 
     <textarea
@@ -32,7 +36,7 @@
     />
 
     <transition name="fade" mode="out-in">
-      <p v-show="error">
+      <p v-show="error" class="text-[#fff] text-[12px] text-error">
         {{ error }}
       </p>
     </transition>
@@ -80,7 +84,7 @@ const { isFocused, changeEvent, focusEvent } = useFocusInput({
   focus: onFocus,
 });
 
-const passwordInput = computed(() => props.name === states.password.id);
+const passwordInput = computed(() => props.name === states.password?.id);
 const passwordVisible = ref(false);
 const inputType = computed(() =>
   passwordVisible.value ? props.type : props.name
@@ -89,20 +93,3 @@ const togglePasswordVisibility = () => {
   passwordVisible.value = !passwordVisible.value;
 };
 </script>
-
-<style lang="scss" scoped>
-.input-wrapper {
-  position: relative;
-
-  .eye-btn {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-  }
-}
-
-textarea {
-  resize: none;
-}
-</style>

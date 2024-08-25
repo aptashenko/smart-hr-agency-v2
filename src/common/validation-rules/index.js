@@ -25,7 +25,19 @@ const email_state = {
  maxLength: maxLength(40),
 }
 
-const name = {
+const fName = {
+ required,
+ minLength: minLength(1),
+ maxLength: maxLength(32),
+}
+
+const companyName = {
+ required,
+ minLength: minLength(1),
+ maxLength: maxLength(32),
+}
+
+const lName = {
  required,
  minLength: minLength(1),
  maxLength: maxLength(32),
@@ -37,10 +49,18 @@ const message = {
  maxLength: maxLength(1500),
 }
 
+const telegram = {
+ minLength: minLength(1),
+ maxLength: maxLength(15),
+}
+
 export default {
  password: {value: password},
  phone: {value: phone},
  email: {value: email_state},
- name: {value: name},
+ fName: {value: fName},
+ lName: {value: lName},
+ companyName: {value: companyName},
  message: {value: message},
+ telegram: {value: telegram}
 }
