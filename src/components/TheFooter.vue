@@ -17,13 +17,13 @@
        </div>
        <locale-changer class="!text-[#00000080] mt-[24px] min-[768px]:hidden" />
        <div class="mt-[24px] flex items-center gap-[16px] min-[768px]:hidden">
-         <a href="#">
+         <a href="https://t.me/smart_hragency" target="_blank">
            <svg-icon name="telegram" />
          </a>
-         <a href="#">
+         <a href="https://www.instagram.com/smarthr_agency/" target="_blank">
            <svg-icon name="instagram" />
          </a>
-         <a href="#">
+         <a href="https://www.linkedin.com/groups/9823042/" target="_blank">
            <svg-icon name="linkedin" />
          </a>
        </div>
@@ -37,13 +37,13 @@
      <div class="max-[768px]:hidden flex flex-col items-end gap-[24px]">
        <locale-changer class="!text-[#00000080]" dropdown="bottom"  />
        <div class="flex items-center gap-[16px]">
-         <a href="#">
+         <a href="https://t.me/smart_hragency" target="_blank">
            <svg-icon name="telegram" />
          </a>
-         <a href="#">
+         <a href="https://www.instagram.com/smarthr_agency/" target="_blank">
            <svg-icon name="instagram" />
          </a>
-         <a href="#">
+         <a href="https://www.linkedin.com/groups/9823042/" target="_blank">
            <svg-icon name="linkedin" />
          </a>
        </div>

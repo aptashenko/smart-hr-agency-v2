@@ -15,7 +15,7 @@
           Share information about your company
         </p>
       </div>
-      <form-find-talent @on-submit="onSubmit" class="max-w-[440px] mx-auto" />
+      <form-find-talent @on-submit="onFormSubmit" class="max-w-[440px] mx-auto" />
     </div>
     <div v-else>
       <h2 class="text-[44px] text-center font-[600] leading-[1.1] tracking-[-1.76px] text-[#fff] mb-[8px] min-[768px]:text-[80px] min-[768px]:tracking-[-3.2px] min-[768px]:mb-[16px]">
@@ -37,11 +37,12 @@ import SvgIcon from "@/components/shared/SvgIcon.vue";
 import {useModals} from "@/composables/useModals.js";
 import FormFindTalent from "@/components/forms/FormFindTalent.vue";
 import {ref} from "vue";
+import {useSendOrder} from "@/composables/useSendOrder.js";
 const { toggleComponent } = useModals();
-
+const { onSubmit } = useSendOrder()
 const formSent = ref(false)
 
-const onSubmit = () => {
-  formSent.value = true;
+const onFormSubmit = (payload) => {
+  onSubmit(payload, () => {formSent.value = true})
 }
 </script>

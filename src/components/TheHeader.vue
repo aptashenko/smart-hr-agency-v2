@@ -30,16 +30,16 @@
     <div class="max-[768px]:hidden flex items-center flex-1" :class="{'h-[34px]': scrolled}">
       <ul class="flex items-center justify-center gap-[24px] flex-1">
         <li>
-          <a href="#" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">Expretise</a>
+          <a href="#expertise" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">Expretise</a>
         </li>
         <li>
-          <a href="#" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">About</a>
+          <a href="#about" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">About</a>
         </li>
         <li>
-          <a href="#" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">How it works</a>
+          <a href="#how" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">How it works</a>
         </li>
         <li>
-          <a href="#" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">Flexibility</a>
+          <a href="#flexibility" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">Flexibility</a>
         </li>
       </ul>
       <locale-changer v-if="!scrolled" class="!text-[#00000080]" dropdown="bottom" />

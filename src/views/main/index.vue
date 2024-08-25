@@ -24,6 +24,7 @@
     </div>
   </section>
   <section class="px-[20px] mt-[100px] min-[768px]:px-[100px]">
+    <span id="expertise" class="relative top-[-120px] h-[1px] inline-block" />
     <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]">
       Whom we find
     </h2>
@@ -143,6 +144,7 @@
         </defs>
       </svg>
       <div class="relative max-w-[335px] bottom-[25px]">
+        <span id="about" class="absolute top-[-80px] h-[1px] inline-block" />
         <svg width="249" height="961" viewBox="0 0 249 961" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect y="352" width="32" height="32" rx="16" fill="white"/>
           <mask id="mask0_91_608" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="358" width="20" height="20">
@@ -240,10 +242,12 @@
       </div>
     </div>
     <div class="relative max-[768px]:hidden px-[20px] top-[-70px]">
+      <span id="about" class="absolute top-[35%] h-[1px] inline-block" />
       <img src="@/assets/images/structure_1.png"/>
     </div>
   </section>
-  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px]">
+  <section class="relative px-[20px] mt-[100px] min-[768px]:px-[100px]">
+    <span id="how" class="absolute top-[-120px] h-[1px] inline-block" />
     <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]">
       How it works
     </h2>
@@ -296,7 +300,8 @@
   <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
     <action-menu class="min-[768px]:max-w-[800px] mx-auto" />
   </section>
-  <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
+  <section class="relative px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
+    <span id="flexibility" class="absolute top-[-120px] h-[1px] inline-block" />
     <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] max-w-[590px] min-[768px]:tracking-[-2.56px] min-[768px]:text-[64px]">
       If you don’t need a turnkey selection
     </h2>
