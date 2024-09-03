@@ -5,19 +5,13 @@ import dayjs from 'dayjs';
 export const useSwitchLanguage = () => {
   const LANGUAGE_ENUMS = {
     en: 'English',
-    fr: 'Français',
-    pl: 'Polski',
-    ro: 'Română',
-    cs: 'Český',
+    es: 'Español',
     ru: 'Русский',
   };
 
   const locales = {
     en: () => import('dayjs/locale/en'),
-    fr: () => import('dayjs/locale/fr'),
-    pl: () => import('dayjs/locale/pl'),
-    ro: () => import('dayjs/locale/ro'),
-    cs: () => import('dayjs/locale/cs'),
+    es: () => import('dayjs/locale/fr'),
     ru: () => import('dayjs/locale/ru'),
   };
 

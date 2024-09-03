@@ -1,5 +1,5 @@
 <template>
-  <div class="legal-view">
+  <div class="px-[100px]">
     <h2 class="legal-view__title vollkorn-title">
       {{ $t(`legal.${pageName}.title`) }}
     </h2>
@@ -20,7 +20,7 @@ const pageName = computed(() => router.currentRoute.value.name);
 <style lang="scss">
 .legal-view {
   padding: 40px 20px;
-  
+
   &__title {
     font-size: 38px;
     text-align: center;

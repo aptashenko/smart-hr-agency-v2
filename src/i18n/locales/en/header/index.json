@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "expertise": "Expretise",
+    "about": "About",
+    "how": "How it works",
+    "flex": "Flexibility"
+  },
+  "actions": {
+    "findTalent": "Find talent",
+    "getJob": "Get a job"
+  }
+}

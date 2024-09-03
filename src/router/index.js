@@ -10,11 +10,6 @@ const router = createRouter({
       component: MainView,
     },
     {
-      path: '/terms',
-      name: 'terms',
-      component: () => import('@/views/legal/index.vue'),
-    },
-    {
       path: '/privacy',
       name: 'privacy',
       component: () => import('@/views/legal/index.vue'),

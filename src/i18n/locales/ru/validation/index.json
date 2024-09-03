@@ -1,0 +1,51 @@
+{
+  "phone": {
+    "required": "Phone is required",
+    "minLength": "Phone is too short",
+    "maxLength": "Phone is too long",
+    "phoneMask": "It's not a phone"
+  },
+  "password": {
+    "required": "password is required",
+    "minLength": "password is too short",
+    "maxLength": "password is too long"
+  },
+  "fName": {
+    "required": "First name is required",
+    "minLength": "First name is too short",
+    "maxLength": "First name is too long"
+  },
+  "companyName": {
+    "required": "Company name is required",
+    "minLength": "Company name is too short",
+    "maxLength": "Company name is too long"
+  },
+  "lName": {
+    "required": "Last name is required",
+    "minLength": "Last name is too short",
+    "maxLength": "Last name is too long"
+  },
+  "message": {
+    "required": "message is required",
+    "minLength": "message is too short",
+    "maxLength": "message is too long"
+  },
+  "email": {
+    "required": "Email is required",
+    "minLength": "Email is too short",
+    "maxLength": "Email is too long",
+    "email": "it's not email"
+  },
+  "password_confirmation": {
+    "required": "password is required",
+    "isEqual": "passwords don't match",
+    "minLength": "password is too short",
+    "maxLength": "password is too long"
+  },
+  "confirm_password": {
+    "required": "password is required",
+    "isEqual": "passwords don't match",
+    "minLength": "password is too short",
+    "maxLength": "password is too long"
+  }
+}

@@ -6,22 +6,22 @@
    <ul class="flex flex-col items-start text-[#fff] text-[40px] font-[300] gap-[24px]" @click="toggleComponent">
      <li class="flex items-center justify-center">
        <a href="#expertise" class="leading-[44px]" :class="{'text-[#FCFF7E]': currentPage === '#expertise'}">
-         Expretise
+         {{$t('header.menu.expertise')}}
        </a>
      </li>
      <li class="flex items-center justify-center">
        <a href="#about" class="leading-[44px]" :class="{'text-[#FCFF7E]': currentPage === '#about'}">
-         About
+         {{$t('header.menu.about')}}
        </a>
      </li>
      <li class="flex items-center justify-center">
        <a href="#how" class="leading-[44px]" :class="{'text-[#FCFF7E]': currentPage === '#how'}">
-         How it works
+         {{$t('header.menu.about')}}
        </a>
      </li>
      <li class="flex items-center justify-center">
        <a href="#flexibility" class="leading-[44px]" :class="{'text-[#FCFF7E]': currentPage === '#flexibility'}">
-         Flexibility
+         {{$t('header.menu.flex')}}
        </a>
      </li>
    </ul>

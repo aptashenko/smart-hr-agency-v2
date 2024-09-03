@@ -1,35 +1,35 @@
 <template>
   <section class="px-[20px] pt-[56px] min-[768px]:pt-[95px] min-[768px]:max-w-[1000px] mx-auto">
     <h1 class="text-[55px] font-[600] tracking-[-2.24px] leading-[1.1] min-[768px]:text-[80px] min-[768px]:text-center">
-      Connecting <br class="min-[768px]:hidden"/>
+      {{$t('landing.hero.main_title.line_1')}}<br class="min-[768px]:hidden"/>
       <svg-icon name="top" class="inline" />
-      top
+      {{$t('landing.hero.main_title.line_2')}}
       <svg-icon name="talent" class="inline" />
-      talent with
+      {{$t('landing.hero.main_title.line_3')}}
       <svg-icon name="leading" class="inline" />
-      leading
+      {{$t('landing.hero.main_title.line_4')}}
       <svg-icon name="employers" class="inline" />
-      employers
+      {{$t('landing.hero.main_title.line_5')}}
     </h1>
     <h2 class="text-[16px] leading-[1.48] opacity-50 mt-[24px] min-[768px]:text-[24px] min-[768px]:text-center max-w-[800px] mx-auto min-[768px]:mt-[32px]">
-      We select specialists who move businesses forward. We organize everything so that the hiring process for you takes place with minimal time and effort. We help companies attract irreplaceable employees, and talented specialists find top employers.
+      {{$t('landing.hero.subtitle')}}
     </h2>
     <div class="flex items-center gap-[16px] mt-[24px] min-[768px]:justify-center min-[768px]:mt-[32px]">
       <base-button @click="openFindTalent">
-        Find talent
+        {{ $t('header.actions.findTalent') }}
       </base-button>
       <base-button type="inverted" @click="openGetJob">
-        Get a job
+        {{ $t('header.actions.getJob') }}
       </base-button>
     </div>
   </section>
   <section class="px-[20px] mt-[100px] min-[768px]:px-[100px]">
     <span id="expertise" class="relative top-[-120px] h-[1px] inline-block" />
     <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]">
-      Whom we find
+      {{$t('landing.whom.title')}}
     </h2>
     <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[15px] min-[768px]:w-[488px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
-      We find people who are able to grow, move forward, and scale your business
+      {{$t('landing.whom.subtitle')}}
     </p>
     <div class="pb-[260px] min-[768px]:hidden">
       <div class="relative max-w-[335px] top-[25px]">
@@ -84,46 +84,53 @@
           <path d="M176 798V112C176 98.7452 186.745 88 200 88H213" stroke="black" stroke-linejoin="bevel"/>
         </svg>
         <div class="absolute top-[40px] left-0 flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">Executives</h3>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">C-Level</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Director</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Team Lead</p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.lists.executives.title')" />
+          <p
+              class="text-[14px] font-[400] leading-[1.48] opacity-70"
+              v-for="item of $tm('landing.whom.lists.executives.list')"
+          >
+            {{item}}
+          </p>
         </div>
         <div class="absolute top-[110px] right-[20px] flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">Business<br>Development</h3>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">PR</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Sales</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">SMM</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">SEO</p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.lists.business.title')" />
+          <p class="text-[14px] font-[400] leading-[1.48] opacity-70"
+            v-for="item of $tm('landing.whom.lists.business.list')"
+          >
+            {{item}}
+          </p>
         </div>
         <div class="absolute top-[230px] left-0 flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">Developers</h3>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Python</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">PHP</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">JS</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">React</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Node.JS</p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.lists.devs.title')" />
+          <p class="text-[14px] font-[400] leading-[1.48] opacity-70"
+             v-for="item of $tm('landing.whom.lists.devs.list')"
+          >
+           {{item}}
+          </p>
         </div>
         <div class="absolute top-[355px] right-[20px] flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">Digital & <br>Performance <br>Marketing</h3>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">User Acquisition</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">User Acquisition</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">SMM</p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.lists.digital.title')" />
+          <p class="text-[14px] font-[400] leading-[1.48] opacity-70"
+             v-for="item of $tm('landing.whom.lists.digital.list')"
+          >
+            {{item}}
+          </p>
         </div>
         <div class="absolute top-[480px] left-0 flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">Affiliate Marketing</h3>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Media Buyer</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Account Manager</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Motion Designer</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">UI/UX Designer</p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.lists.affiliate.title')" />
+          <p class="text-[14px] font-[400] leading-[1.48] opacity-70"
+             v-for="item of $tm('landing.whom.lists.affiliate.list')"
+          >
+            {{item}}
+          </p>
         </div>
         <div class="absolute top-[595px] right-[20px] flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">IT</h3>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Project Manager</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">QA Engineer</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">Data Analyst</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">DevOps</p>
-          <p class="text-[14px] font-[400] leading-[1.48] opacity-70">AI Engineer</p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.lists.it.title')" />
+          <p class="text-[14px] font-[400] leading-[1.48] opacity-70"
+             v-for="item of $tm('landing.whom.lists.it.list')"
+          >
+            {{item}}
+          </p>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none" class="mx-auto">
@@ -188,71 +195,43 @@
           <path d="M177 0.199951V405C177 418.255 187.745 429 201 429H214" stroke="black" stroke-linejoin="bevel"/>
         </svg>
         <div class="absolute top-[40px] left-0 flex flex-col gap-[8px]">
-          <h3 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px]">
-            How <br>we are<br>different
-          </h3>
-          <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50">
-            and what<br>does this<br>mean for<br>you
-          </p>
+          <h3 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px]" v-html="$t('landing.whom.different.title')" :class="{'!text-[30px]': currentLocale === 'ru'}" />
+          <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50" v-html="$t('landing.whom.different.subtitle')" :class="{'!text-[24px]': currentLocale === 'ru'}" />
         </div>
         <div class="absolute w-[137px] top-[100px] right-[-15px] flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">
-            Convenient service
-          </h3>
-          <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
-            On your part, recruiting employees requires a minimum of time. A 15-20 minute call—and we will fill out the brief ourselves and clarify everything necessary. Are you comfortable communicating by voice? Accepted. Special requirements? No problem.
-          </p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.different.list.convenient.title')" />
+          <p class="text-[12px] font-[400] leading-[1.48] opacity-50" v-html="$t('landing.whom.different.list.convenient.text')" :class="{'!text-[10px]': currentLocale === 'ru'}" />
         </div>
         <div class="absolute w-[137px] top-[390px] left-0 flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">
-            Smart approach and innovation
-          </h3>
-          <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
-            We use a smart bot and artificial intelligence to process hundreds of resumes in minutes and find exactly the people your business needs.
-            <br><br>
-            3000+ resumes in the database and a smart tagging system make it possible to find candidates for regular positions on the day of application.
-          </p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.different.list.smart.title')" />
+          <p class="text-[12px] font-[400] leading-[1.48] opacity-50" v-html="$t('landing.whom.different.list.smart.text')" :class="{'!text-[10px]': currentLocale === 'ru'}" />
         </div>
         <div class="absolute w-[137px] top-[450px] right-[-15px] flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">
-            We look at the task of recruiting employees globally <span class="font-[400] opacity-50">and find rare specialists in non-standard places</span>
-          </h3>
-          <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
-            We don’t just offer candidates, but find people who will develop and scale your business. Each in their place.
-            <br><br>
-            Along with the standard search on HH and LinkedIn, we work with professional communities and chats, connect networks and direct contacts, use creative advertising.
-          </p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.different.list.look.title')" />
+          <p class="text-[12px] font-[400] leading-[1.48] opacity-50" v-html="$t('landing.whom.different.list.look.text')" :class="{'!text-[10px]': currentLocale === 'ru'}" />
         </div>
         <div class="absolute w-[137px] top-[785px] left-0 flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">
-            We develop our own community of HR specialists
-          </h3>
-          <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
-            We know what the market is breathing, we keep our finger on the pulse of the industry and are always aware of the current situation with the employees you need, where to look for them and what conditions to offer so that they come to work for you and not for your competitors.
-          </p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.different.list.develop.title')" />
+          <p class="text-[12px] font-[400] leading-[1.48] opacity-50" v-html="$t('landing.whom.different.list.develop.text')" :class="{'!text-[10px]': currentLocale === 'ru'}" />
         </div>
         <div class="absolute w-[137px] top-[970px] right-[-15px] flex flex-col gap-[8px]">
-          <h3 class="text-[16px] font-[700] leading-[1.48]">
-            20 years experience
-          </h3>
-          <p class="text-[12px] font-[400] leading-[1.48] opacity-50">
-            We know all the inner workings of IT/digital/affiliate, all the pains of owners/CEOs and have direct access to specialists who will never appear on HeadHunter, do not shine on LinkedIn, but have the necessary experience and knowledge to move your business forward.
-          </p>
+          <h3 class="text-[16px] font-[700] leading-[1.48]" v-html="$t('landing.whom.different.list.experience.title')" />
+          <p class="text-[12px] font-[400] leading-[1.48] opacity-50" v-html="$t('landing.whom.different.list.experience.text')" :class="{'!text-[10px]': currentLocale === 'ru'}" />
         </div>
       </div>
     </div>
     <div class="relative max-[768px]:hidden px-[20px] top-[-70px]">
       <span id="about" class="absolute top-[35%] h-[1px] inline-block" />
-      <img src="@/assets/images/structure_1.png"/>
+      <img :src="structureOne"/>
     </div>
   </section>
   <section class="relative px-[20px] mt-[100px] min-[768px]:px-[100px]">
     <span id="how" class="absolute top-[-120px] h-[1px] inline-block" />
     <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]">
-      How it works
+      {{$t('landing.how.title')}}
     </h2>
     <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[40px] min-[768px]:w-[692px] min-[768px]:mb-[48px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
-      Impeccable service. Minimum effort and time on your part—maximum result
+      {{$t('landing.whom.subtitle')}}
     </p>
     <div class="relative max-w-[335px] pb-[100px] min-[768px]:hidden">
       <svg width="290" height="733" viewBox="0 0 290 733" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,27 +253,15 @@
         <path d="M15.988 21.5V14.185H14.483V12.764C14.7957 12.764 15.078 12.7313 15.33 12.666C15.582 12.6007 15.7943 12.491 15.967 12.337C16.1443 12.183 16.2773 11.9707 16.366 11.7H17.801V21.5H15.988Z" fill="black"/>
         <path d="M205 146H210C223.255 146 234 135.255 234 122V40C234 26.7452 223.255 16 210 16H36" stroke="black" stroke-linejoin="bevel"/>
       </svg>
-      <p class="absolute text-[#00000080] w-[184px] top-[45px] left-0 text-[14px] font-[400] leading-[1.48]">
-        A short intro call for <span class="font-[700] text-[#000]">15-20 minutes</span> to find out who exactly you need.
-      </p>
-      <p class="absolute text-[#00000080] w-[184px] top-[180px] right-[-20px] text-[14px] font-[400] leading-[1.48]">
-        <span class="text-[#000]">We prepare the brief </span>ourselves, agree on it with you and supplement it if necessary.
-      </p>
-      <p class="absolute text-[#00000080] w-[184px] top-[330px] left-[50px] text-[14px] font-[400] leading-[1.48]">
-        We search, interview and test candidates completely <span class="font-[700] text-[#000]">on our side.</span>
-      </p>
-      <p class="absolute text-[#00000080] w-[184px] top-[450px] right-[-20px] text-[14px] font-[400] leading-[1.48]">
-        We send to you only <span class="text-[#000] font-[700]">those who have passed our selection filter</span> and ideally match your position.
-      </p>
-      <p class="absolute text-[#00000080] w-[184px] top-[600px] left-[50px] text-[14px] font-[400] leading-[1.48]">
-        We select a new candidate for <span class="text-[#000] font-[700]">free</span> within 3 months if the first one does not pass the trial period.
-      </p>
-      <p class="absolute text-[#00000080] w-[184px] top-[740px] right-[-20px] text-[14px] font-[400] leading-[1.48]">
-        You pay for our services only after the employee has successfully worked for <span class="text-[#000] font-[700]">2 weeks.</span>
-      </p>
+      <p class="absolute text-[#00000080] w-[184px] top-[45px] left-0 text-[14px] font-[400] leading-[1.48]" v-html="$t('landing.how.steps.step_1')" />
+      <p class="absolute text-[#00000080] w-[184px] top-[180px] right-[-20px] text-[14px] font-[400] leading-[1.48]" v-html="$t('landing.how.steps.step_2')" />
+      <p class="absolute text-[#00000080] w-[184px] top-[330px] left-[50px] text-[14px] font-[400] leading-[1.48]" v-html="$t('landing.how.steps.step_3')" />
+      <p class="absolute text-[#00000080] w-[184px] top-[450px] right-[-20px] text-[14px] font-[400] leading-[1.48]" v-html="$t('landing.how.steps.step_4')" />
+      <p class="absolute text-[#00000080] w-[184px] top-[600px] left-[50px] text-[14px] font-[400] leading-[1.48]" v-html="$t('landing.how.steps.step_5')" />
+      <p class="absolute text-[#00000080] w-[184px] top-[740px] right-[-20px] text-[14px] font-[400] leading-[1.48]" v-html="$t('landing.how.steps.step_6')" />
     </div>
     <div class="relative max-[768px]:hidden px-[20px]">
-      <img src="@/assets/images/structure_2.png" />
+      <img :src="structureTwo" />
     </div>
   </section>
   <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
@@ -303,53 +270,54 @@
   <section class="relative px-[20px] mt-[100px] min-[768px]:px-[100px] min-[768px]:mt-[180px]">
     <span id="flexibility" class="absolute top-[-120px] h-[1px] inline-block" />
     <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] max-w-[590px] min-[768px]:tracking-[-2.56px] min-[768px]:text-[64px]">
-      If you don’t need a turnkey selection
+      {{ $t('landing.flexibly.title') }}
     </h2>
     <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[40px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px] min-[768px]:mb-[48px]">
-      We flexibly adapt to your needs and tasks
+      {{ $t('landing.flexibly.subtitle') }}
     </p>
     <div class="flex max-[768px]:flex-col gap-[24px] min-[768px]:gap-[120px]">
       <div>
         <svg-icon name="recruiter" class="mb-[12px]" />
         <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px] min-[768px]:text-[18px]">
-          Recruiter on a retainer
+          {{ $t('landing.flexibly.list.recruiter.title') }}
         </h2>
         <p class="text-[12px] font-[400] leading-[1.48] opacity-50 min-[768px]:text-[16px]">
-          We provide an experienced recruiter who will strengthen your team, connect to internal hiring processes and help find the right employees or assemble a startup/department/team.
+          {{ $t('landing.flexibly.list.recruiter.text') }}
         </p>
       </div>
       <div>
         <svg-icon name="hr" class="mb-[12px]" />
         <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px] min-[768px]:text-[18px]">
-          HR on a retainer
+          {{ $t('landing.flexibly.list.hr.title') }}
         </h2>
         <p class="text-[12px] font-[400] leading-[1.48] opacity-50 min-[768px]:text-[16px]">
-          We assign a specialist who will establish HR processes, set up a CRM system, and digitize the corporate culture. From hiring and onboarding employees to holding corporate events and ordering merch - anything to suit your needs and requests.
+          {{ $t('landing.flexibly.list.hr.text') }}
         </p>
       </div>
       <div>
         <svg-icon name="sourcing" class="mb-[12px]" />
         <h2 class="text-[16px] font-[700] leading-[1.48] mb-[12px] min-[768px]:text-[18px]">
-          Sourcing
+          {{ $t('landing.flexibly.list.sourcing.title') }}
         </h2>
         <p class="text-[12px] font-[400] leading-[1.48] opacity-50 min-[768px]:text-[16px]">
-          We will provide 300 resumes for your request, from which you can choose suitable candidates yourself. Before getting to you, each candidate goes through our verification system, 4 psychological tests and several stages of preliminary interviews.        </p>
+          {{ $t('landing.flexibly.list.sourcing.text') }}
+        </p>
       </div>
     </div>
   </section>
   <section class="px-[20px] mt-[100px] min-[768px]:px-[100px] pb-[100px] min-[768px]:pb-[240px] min-[768px]:mt-[160px]">
     <h2 class="text-[56px] font-[600] tracking-[-2.24px] leading-[1.1] text-center mb-[8px] min-[768px]:text-[80px] min-[768px]:tracking-[-3.2px]">
-      Get in touch
+      {{$t('landing.inTouch.title')}}
     </h2>
     <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 text-center min-[768px]:max-w-[985px] mx-auto min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
-      We will contact you within 24 hours and begin work on finding employees for your business
+      {{$t('landing.inTouch.subtitle')}}
     </p>
     <div class="flex items-center justify-center gap-[20px] mt-[24px]">
       <base-button @click="openFindTalent">
-        Find talent
+        {{$t('header.actions.findTalent')}}
       </base-button>
       <base-button type="inverted" @click="openGetJob">
-        Get a job
+        {{$t('header.actions.getJob')}}
       </base-button>
     </div>
   </section>
@@ -360,6 +328,22 @@ import SvgIcon from "@/components/shared/SvgIcon.vue";
 import BaseButton from "@/components/ui/base/BaseButton.vue";
 import ActionMenu from "@/components/ActionMenu.vue";
 import {useModals} from "@/composables/useModals.js";
+import {useSwitchLanguage} from "@/composables/useSwitchLanguage.js";
+import {computed} from "vue";
 
-const { openFindTalent, openGetJob } = useModals()
+const { openFindTalent, openGetJob } = useModals();
+const { currentLocale } = useSwitchLanguage();
+
+const structureOne = computed(() => {
+  return new URL(
+      `../../assets/images/structure_1-${currentLocale.value}.png`,
+      import.meta.url,
+  ).href;
+});
+const structureTwo = computed(() => {
+  return new URL(
+      `../../assets/images/structure_2-${currentLocale.value}.png`,
+      import.meta.url,
+  ).href;
+});
 </script>

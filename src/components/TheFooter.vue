@@ -29,8 +29,8 @@
        </div>
        <div class="mt-[24px]">
          <p class="inline mr-[20px] text-[12px] opacity-50 font-[400] leading-[1.48] min-[768px]:hidden">© 2017—{{ new Date().getFullYear() }} A Better Career OÜ</p>
-         <router-link to="/" class="text-[12px] opacity-50 font-[400] leading-[1.48]">
-           Privacy policy
+         <router-link :to="{name: 'privacy'}" target="_blank" class="text-[12px] opacity-50 font-[400] leading-[1.48]">
+           {{ $t('legal.privacy.label') }}
          </router-link>
        </div>
      </div>
@@ -54,13 +54,6 @@
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
 import LocaleChanger from "@/components/LocaleChanger.vue";
 
-const router = useRouter();
-
-const openInNewTab = routeName => {
- const routeData = router.resolve({ name: routeName });
- window.open(routeData.href, '_blank');
-};
 </script>

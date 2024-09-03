@@ -18,23 +18,25 @@
 
 <script setup>
 import BaseButton from "@/components/ui/base/BaseButton.vue";
-import {ref} from "vue";
-const product = ref(0)
-const texts = [
+import {computed, ref} from "vue";
+import {useI18n} from "vue-i18n";
+const product = ref(0);
+const { t } = useI18n()
+const texts = computed(() => ([
   {
-    label: 'Companies',
-    text: 'We will find suitable candidates within 1 day to 2 weeks. Along with the resume, we will send a 15-minute video recording of the initial interview and the results of 4 psychological tests so that you can get to know the candidates and select the best ones before the personal communication stage. All you have to do is conduct the final interviews and choose the one who best meets your vision.',
-    cta: 'Find talent'
+    label: t('landing.actionMenu.companies.label'),
+    text: t('landing.actionMenu.companies.description'),
+    cta: t('header.actions.findTalent')
   },
   {
-    label: 'Professionals',
-    text: 'NO TEXT',
-    cta: 'NO TEXT'
+    label: t('landing.actionMenu.specialists.label'),
+    text: t('landing.actionMenu.specialists.description'),
+    cta: t('header.actions.getJob')
   },
   {
-    label: 'Partners',
-    text: 'NO TEXT',
-    cta: 'NO TEXT'
+    label: t('landing.actionMenu.partners.label'),
+    text: t('landing.actionMenu.partners.description'),
+    cta: '?????'
   },
-]
+]))
 </script>
