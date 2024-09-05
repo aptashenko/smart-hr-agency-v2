@@ -16,7 +16,7 @@
      </li>
      <li class="flex items-center justify-center">
        <a href="#how" class="leading-[44px]" :class="{'text-[#FCFF7E]': currentPage === '#how'}">
-         {{$t('header.menu.about')}}
+         {{$t('header.menu.how')}}
        </a>
      </li>
      <li class="flex items-center justify-center">

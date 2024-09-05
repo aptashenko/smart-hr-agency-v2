@@ -1,0 +1,24 @@
+{
+  "findTalent": {
+    "title": "Find talent",
+    "subtitle": "Share information about your company",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "Work email",
+    "company_name": "Company name",
+    "telegram": "Telegram (optional)",
+    "phone": "Phone",
+    "cta": "Submit"
+  },
+  "getJob": {
+    "title": "Get a job",
+    "subtitle": "Share information about you",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "Email",
+    "linkedin": "LinkedIn (optional)",
+    "telegram": "Telegram (optional)",
+    "phone": "Phone",
+    "cta": "Submit"
+  }
+}

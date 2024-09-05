@@ -7,7 +7,7 @@
   >
     <base-input
         inverted
-        label="First name"
+        :label="$t('forms.getJob.first_name')"
         :name="values.fName.id"
         :id="values.fName.id"
         v-model="values.fName.value"
@@ -15,7 +15,7 @@
     />
     <base-input
         inverted
-        label="Last name"
+        :label="$t('forms.getJob.last_name')"
         :name="values.lName.id"
         :id="values.lName.id"
         v-model="values.lName.value"
@@ -23,7 +23,7 @@
     />
     <base-input
         inverted
-        label="Email"
+        :label="$t('forms.getJob.email')"
         :name="values.email.id"
         :id="values.email.id"
         v-model="values.email.value"
@@ -31,7 +31,7 @@
     />
     <base-input
         inverted
-        label="Telegram (optional)"
+        :label="$t('forms.getJob.telegram')"
         :name="values.telegram.id"
         :id="values.telegram.id"
         v-model="values.telegram.value"
@@ -39,7 +39,7 @@
     />
     <base-input
         inverted
-        label="LinkedIn (optional)"
+        :label="$t('forms.getJob.linkedin')"
         :name="values.linkedin.id"
         :id="values.linkedin.id"
         v-model="values.linkedin.value"
@@ -47,14 +47,14 @@
     />
     <base-input
         inverted
-        label="Phone"
+        :label="$t('forms.getJob.phone')"
         :name="values.phone.id"
         :id="values.phone.id"
         v-model="values.phone.value"
         :error="errors.phone"
     />
     <base-button class="mx-auto block mt-[40px]">
-      Submit
+      {{ $t('forms.getJob.cta') }}
     </base-button>
   </base-form>
 </template>

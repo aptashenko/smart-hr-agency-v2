@@ -6,49 +6,49 @@
       v-slot="{errors, values}"
   >
     <base-input
-        label="First name"
+        :label="$t('forms.findTalent.first_name')"
         :name="values.fName.id"
         :id="values.fName.id"
         v-model="values.fName.value"
         :error="errors.fName"
     />
     <base-input
-        label="Last name"
+        :label="$t('forms.findTalent.last_name')"
         :name="values.lName.id"
         :id="values.lName.id"
         v-model="values.lName.value"
         :error="errors.lName"
     />
     <base-input
-        label="Work Email"
+        :label="$t('forms.findTalent.email')"
         :name="values.email.id"
         :id="values.email.id"
         v-model="values.email.value"
         :error="errors.email"
     />
     <base-input
-        label="Company name"
+        :label="$t('forms.findTalent.company_name')"
         :name="values.companyName.id"
         :id="values.companyName.id"
         v-model="values.companyName.value"
         :error="errors.companyName"
     />
     <base-input
-        label="Telegram (optional)"
+        :label="$t('forms.findTalent.telegram')"
         :name="values.telegram.id"
         :id="values.telegram.id"
         v-model="values.telegram.value"
         :error="errors.telegram"
     />
     <base-input
-        label="Phone"
+        :label="$t('forms.findTalent.phone')"
         :name="values.phone.id"
         :id="values.phone.id"
         v-model="values.phone.value"
         :error="errors.phone"
     />
     <base-button type="inverted" class="mx-auto block mt-[40px]">
-      Submit
+      {{ $t('forms.findTalent.cta') }}
     </base-button>
   </base-form>
 </template>

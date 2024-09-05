@@ -4,7 +4,7 @@
     :to="to"
     :href="href"
     :disabled="isDisabled"
-    :class="[mainClass]"
+    :class="[mainClass, {'max-[768px]:!text-[11px]': currentLocale === 'es'}]"
   >
     <slot />
   </component>
@@ -12,7 +12,8 @@
 
 <script setup>
 import { computed } from 'vue';
-
+import {useSwitchLanguage} from "@/composables/useSwitchLanguage.js";
+const { currentLocale } = useSwitchLanguage()
 const props = defineProps({
   tag: {
     type: String,

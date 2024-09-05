@@ -17,13 +17,13 @@
        </div>
        <locale-changer class="!text-[#00000080] mt-[24px] min-[768px]:hidden" />
        <div class="mt-[24px] flex items-center gap-[16px] min-[768px]:hidden">
-         <a href="https://t.me/smart_hragency" target="_blank">
+         <a href="https://t.me/smarthr_agency_news" target="_blank">
            <svg-icon name="telegram" />
          </a>
-         <a href="https://www.instagram.com/smarthr_agency/" target="_blank">
+         <a :href="instagramLink" target="_blank">
            <svg-icon name="instagram" />
          </a>
-         <a href="https://www.linkedin.com/groups/9823042/" target="_blank">
+         <a href="https://www.linkedin.com/company/104154552/" target="_blank">
            <svg-icon name="linkedin" />
          </a>
        </div>
@@ -37,13 +37,13 @@
      <div class="max-[768px]:hidden flex flex-col items-end gap-[24px]">
        <locale-changer class="!text-[#00000080]" dropdown="bottom"  />
        <div class="flex items-center gap-[16px]">
-         <a href="https://t.me/smart_hragency" target="_blank">
+         <a href="https://t.me/smarthr_agency_news" target="_blank">
            <svg-icon name="telegram" />
          </a>
-         <a href="https://www.instagram.com/smarthr_agency/" target="_blank">
+         <a :href="instagramLink" target="_blank">
            <svg-icon name="instagram" />
          </a>
-         <a href="https://www.linkedin.com/groups/9823042/" target="_blank">
+         <a href="https://www.linkedin.com/company/104154552/" target="_blank">
            <svg-icon name="linkedin" />
          </a>
        </div>
@@ -55,5 +55,14 @@
 
 <script setup>
 import LocaleChanger from "@/components/LocaleChanger.vue";
+import {computed} from "vue";
+import {useSwitchLanguage} from "@/composables/useSwitchLanguage.js";
+const { currentLocale } = useSwitchLanguage()
+const instagramLink = computed(() => ({
+  ru: 'https://www.instagram.com/smarthr_agency/',
+  en: 'https://www.instagram.com/smarthr_agency_eng/',
+  es: 'https://www.instagram.com/smarthr_agency_eng/'
+}[currentLocale.value]))
 
+console.log
 </script>

@@ -9,10 +9,10 @@
     <div v-if="!formSent">
       <div>
         <h2 class="text-[44px] text-center font-[600] leading-[1.1] tracking-[-1.76px] text-[#fff] mb-[8px] min-[768px]:text-[80px] min-[768px]:tracking-[-3.2px] min-[768px]:mb-[16px]">
-          Find talent
+          {{ $t('forms.findTalent.title') }}
         </h2>
         <p class="text-[30px] text-center font-[300] leading-[1.1]  tracking-[-1.2px] text-[#fff] opacity-50 min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
-          Share information about your company
+          {{ $t('forms.findTalent.subtitle') }}
         </p>
       </div>
       <form-find-talent @on-submit="onFormSubmit" class="max-w-[440px] mx-auto" />
@@ -38,6 +38,7 @@ import {useModals} from "@/composables/useModals.js";
 import FormFindTalent from "@/components/forms/FormFindTalent.vue";
 import {ref} from "vue";
 import {useSendOrder} from "@/composables/useSendOrder.js";
+import BaseInput from "@/components/ui/base/BaseInput.vue";
 const { toggleComponent } = useModals();
 const { onSubmit } = useSendOrder()
 const formSent = ref(false)

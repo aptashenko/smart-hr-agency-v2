@@ -1,0 +1,24 @@
+{
+  "findTalent": {
+    "title": "Encuentra talento",
+    "subtitle": "Comparte información sobre tu empresa",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "email": "Correo electrónico laboral",
+    "company_name": "Nombre de la empresa",
+    "telegram": "Telegram (opcional)",
+    "phone": "Teléfono",
+    "cta": "Enviar"
+  },
+  "getJob": {
+    "title": "Conseguir un trabajo",
+    "subtitle": "Comparte información sobre ti",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "email": "Correo electrónico",
+    "linkedin": "LinkedIn (opcional)",
+    "telegram": "Telegram (opcional)",
+    "phone": "Teléfono",
+    "cta": "Enviar"
+  }
+}

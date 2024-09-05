@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "main_title": {
+      "line_1": "El enfoque SMART",
+      "line_2": ", las innovaciones",
+      "line_3": "y el servicio",
+      "line_4": "orientado al",
+      "line_5": "cliente"
+    },
+    "subtitle": "Reclutando profesionales que hagan avanzar tu negocio. Organizando todo para minimizar tu tiempo y esfuerzo en el proceso de contratación. Ayudando a las empresas a atraer empleados valiosos y a los profesionales talentosos a encontrar los mejores empleadores."
+  },
+  "whom": {
+    "title": "¿A quiénes reclutamos?",
+    "subtitle": "Encontramos personas capaces de desarrollar, impulsar y hacer crecer tu negocio."
+  },
+  "how": {
+    "title": "¿Cómo trabajamos?",
+    "subtitle": "Servicio impecable. Mínimo esfuerzo y tiempo por tu parte — máximo resultado."
+  },
+  "actionMenu": {
+    "companies": {
+      "label": "Para las Empresas",
+      "description": "Encontraremos a los candidatos adecuados para ti en un plazo de 1 a 2 semanas. Junto con sus CVs, te enviaremos un vídeo de 15 minutos de la primera entrevista y los resultados de 4 tests psicológicos. Así podrás conocer a los candidatos y seleccionar a los mejores incluso antes de reunirte con ellos en persona.\nSolo te quedará realizar las entrevistas finales y elegir al candidato que mejor cumpla con tus requisitos y visión."
+    },
+    "specialists": {
+      "label": "Para los Especialistas",
+      "description": "Te ayudaremos a encontrar los mejores empleadores y oportunidades laborales emocionantes, incluso si no estás buscando trabajo en este momento.\n¿No tienes CV? ¡No pasa nada! Nuestro bot inteligente te ayudará a crear uno en solo 5 minutos. También te guiaremos a través de una serie de tests psicológicos, te prepararemos para las entrevistas y grabaremos una vídeo-presentación personal. Todo este material es tuyo para que lo utilices como quieras."
+    },
+    "partners": {
+      "label": "Para los Socios",
+      "description": "Gana un 7% de todos los pagos de los clientes que lleguen a nosotros gracias a tu recomendación."
+    }
+  },
+  "flexibly": {
+    "title": "Si no necesitas una solución completa,",
+    "subtitle": "podemos adaptarnos a tus necesidades específicas:",
+    "list": {
+      "recruiter": {
+        "title": "Reclutador individual",
+        "text": "Incorpora a un reclutador experto a tu equipo. Nuestro especialista con experiencia se encargará de todos los procesos de contratación y te ayudará a encontrar los talentos adecuados o a construir tu startup, departamento o equipo.."
+      },
+      "hr": {
+        "title": "RRHH individual",
+        "text": "Incorpora un especialista en Recursos Humanos para establecer y mejorar tus procesos de RRHH. Se encargará de todo, desde la configuración de un sistema CRM y la digitalización de la cultura de tu empresa hasta la gestión de contrataciones, incorporaciones, eventos corporativos, pedidos de merchandising de la empresa y mucho más."
+      },
+      "sourcing": {
+        "title": "Búsqueda y Selección",
+        "text": "Te proporcionaremos CVs adaptados a tu solicitud para que puedas elegir a los candidatos adecuados tú mismo. Antes de llegar a ti, cada candidato es verificado, completa 4 tests psicológicos y pasa por varias etapas de entrevistas preliminares."
+      }
+    }
+  },
+  "inTouch": {
+    "title": "Enviar la solicitud",
+    "subtitle": "Te contactaremos en un plazo de 24 horas y comenzaremos la búsqueda de los empleados perfectos para tu empresa."
+  }
+}

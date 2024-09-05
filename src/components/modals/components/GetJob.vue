@@ -9,10 +9,10 @@
     <div v-if="!formSent">
       <div>
         <h2 class="text-[44px] text-center font-[600] leading-[1.1] tracking-[-1.76px] text-[#000] mb-[8px] min-[768px]:text-[80px] min-[768px]:tracking-[-3.2px] min-[768px]:mb-[16px]">
-          Get a job
+          {{ $t('forms.getJob.title') }}
         </h2>
         <p class="text-[30px] text-center font-[300] leading-[1.1]  tracking-[-1.2px] text-[#000] opacity-50 min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
-          Share information about you
+          {{ $t('forms.getJob.subtitle') }}
         </p>
       </div>
       <form-get-job @on-submit="onFormSubmit" class="max-w-[440px] mx-auto" />

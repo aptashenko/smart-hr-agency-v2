@@ -42,7 +42,7 @@
           </li>
           <li>
             <a href="#how" class="text-[16px] font-[400] leading-[1.48] transition hover:opacity-50">
-              {{$t('header.menu.about')}}
+              {{$t('header.menu.how')}}
             </a>
           </li>
           <li>

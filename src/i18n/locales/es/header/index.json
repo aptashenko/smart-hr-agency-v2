@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "expertise": "Experiencia",
+    "about": "Sobre nosotros",
+    "how": "Cómo funciona",
+    "flex": "Flexibilidad"
+  },
+  "actions": {
+    "findTalent": "Encontrar talento",
+    "getJob": "Conseguir un trabajo"
+  }
+}

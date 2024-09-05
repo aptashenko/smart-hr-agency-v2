@@ -1,51 +1,51 @@
 {
   "phone": {
-    "required": "Phone is required",
-    "minLength": "Phone is too short",
-    "maxLength": "Phone is too long",
-    "phoneMask": "It's not a phone"
+    "required": "Телефон обязателен",
+    "minLength": "Телефон слишком короткий",
+    "maxLength": "Телефон слишком длинный",
+    "phoneMask": "Это не телефон"
   },
   "password": {
-    "required": "password is required",
-    "minLength": "password is too short",
-    "maxLength": "password is too long"
+    "required": "Пароль обязателен",
+    "minLength": "Пароль слишком короткий",
+    "maxLength": "Пароль слишком длинный"
   },
   "fName": {
-    "required": "First name is required",
-    "minLength": "First name is too short",
-    "maxLength": "First name is too long"
+    "required": "Имя обязательно",
+    "minLength": "Имя слишком короткое",
+    "maxLength": "Имя слишком длинное"
   },
   "companyName": {
-    "required": "Company name is required",
-    "minLength": "Company name is too short",
-    "maxLength": "Company name is too long"
+    "required": "Название компании обязательно",
+    "minLength": "Название компании слишком короткое",
+    "maxLength": "Название компании слишком длинное"
   },
   "lName": {
-    "required": "Last name is required",
-    "minLength": "Last name is too short",
-    "maxLength": "Last name is too long"
+    "required": "Фамилия обязательна",
+    "minLength": "Фамилия слишком короткая",
+    "maxLength": "Фамилия слишком длинная"
   },
   "message": {
-    "required": "message is required",
-    "minLength": "message is too short",
-    "maxLength": "message is too long"
+    "required": "Сообщение обязательно",
+    "minLength": "Сообщение слишком короткое",
+    "maxLength": "Сообщение слишком длинное"
   },
   "email": {
-    "required": "Email is required",
-    "minLength": "Email is too short",
-    "maxLength": "Email is too long",
-    "email": "it's not email"
+    "required": "Email обязателен",
+    "minLength": "Email слишком короткий",
+    "maxLength": "Email слишком длинный",
+    "email": "Это не email"
   },
   "password_confirmation": {
-    "required": "password is required",
-    "isEqual": "passwords don't match",
-    "minLength": "password is too short",
-    "maxLength": "password is too long"
+    "required": "Пароль обязателен",
+    "isEqual": "Пароли не совпадают",
+    "minLength": "Пароль слишком короткий",
+    "maxLength": "Пароль слишком длинный"
   },
   "confirm_password": {
-    "required": "password is required",
-    "isEqual": "passwords don't match",
-    "minLength": "password is too short",
-    "maxLength": "password is too long"
+    "required": "Пароль обязателен",
+    "isEqual": "Пароли не совпадают",
+    "minLength": "Пароль слишком короткий",
+    "maxLength": "Пароль слишком длинный"
   }
 }

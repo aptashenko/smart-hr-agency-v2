@@ -9,26 +9,34 @@
         </div>
       </div>
     </button>
-    <div v-if="langsList" class="">
-      <div class="fixed top-0 left-0 h-[100vh] w-[100vw] z-[1]" @click="toggleLangs" />
-      <ul class="z-[2] bg-[#fff] rounded-[12px] absolute p-[8px]" :class="[dropdown === 'top' ? 'bottom-[150%]' : 'top-[150%] min-w-[135px] right-0']">
-        <li class="flex items-center justify-start bg-[#00000014] rounded-[4px] py-[2px] px-[8px]">
-          <button class="text-[14px] text-[#000]" @click="switchLanguage('en')">
-            English
-          </button>
-        </li>
-        <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]">
-          <button class="text-[14px] text-[#000]" @click="switchLanguage('ru')">
-            Русский <span class="text-[12px] opacity-40">Russian</span>
-          </button>
-        </li>
-        <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]">
-          <button class="text-[14px] text-[#000]" @click="switchLanguage('es')">
-            Español <span class="text-[12px] opacity-40">Spanish</span>
-          </button>
-        </li>
-      </ul>
-    </div>
+    <transition name="fade">
+      <div v-if="langsList">
+        <div class="fixed top-0 left-0 h-[100vh] w-[100vw] z-[1]" @click="toggleLangs" />
+        <ul class="z-[2] bg-[#fff] rounded-[12px] absolute p-[8px]" :class="[dropdown === 'top' ? 'bottom-[150%]' : 'top-[150%] min-w-[135px] right-0']">
+          <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]"
+              :class="{'bg-[#00000014]': currentLocale === 'en'}"
+          >
+            <button class="text-[14px] text-[#000]" @click="switchLanguage('en')">
+              English
+            </button>
+          </li>
+          <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]"
+              :class="{'bg-[#00000014]': currentLocale === 'ru'}"
+          >
+            <button class="text-[14px] text-[#000]" @click="switchLanguage('ru')">
+              Русский <span class="text-[12px] opacity-40">Russian</span>
+            </button>
+          </li>
+          <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]"
+              :class="{'bg-[#00000014]': currentLocale === 'es'}"
+          >
+            <button class="text-[14px] text-[#000]" @click="switchLanguage('es')">
+              Español <span class="text-[12px] opacity-40">Spanish</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 <script setup lang="ts">

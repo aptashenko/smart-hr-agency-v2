@@ -1,0 +1,51 @@
+{
+  "phone": {
+    "required": "El teléfono es obligatorio",
+    "minLength": "El teléfono es demasiado corto",
+    "maxLength": "El teléfono es demasiado largo",
+    "phoneMask": "No es un número de teléfono válido"
+  },
+  "password": {
+    "required": "La contraseña es obligatoria",
+    "minLength": "La contraseña es demasiado corta",
+    "maxLength": "La contraseña es demasiado larga"
+  },
+  "fName": {
+    "required": "El nombre es obligatorio",
+    "minLength": "El nombre es demasiado corto",
+    "maxLength": "El nombre es demasiado largo"
+  },
+  "companyName": {
+    "required": "El nombre de la empresa es obligatorio",
+    "minLength": "El nombre de la empresa es demasiado corto",
+    "maxLength": "El nombre de la empresa es demasiado largo"
+  },
+  "lName": {
+    "required": "El apellido es obligatorio",
+    "minLength": "El apellido es demasiado corto",
+    "maxLength": "El apellido es demasiado largo"
+  },
+  "message": {
+    "required": "El mensaje es obligatorio",
+    "minLength": "El mensaje es demasiado corto",
+    "maxLength": "El mensaje es demasiado largo"
+  },
+  "email": {
+    "required": "El correo electrónico es obligatorio",
+    "minLength": "El correo electrónico es demasiado corto",
+    "maxLength": "El correo electrónico es demasiado largo",
+    "email": "No es un correo electrónico válido"
+  },
+  "password_confirmation": {
+    "required": "La contraseña es obligatoria",
+    "isEqual": "Las contraseñas no coinciden",
+    "minLength": "La contraseña es demasiado corta",
+    "maxLength": "La contraseña es demasiado larga"
+  },
+  "confirm_password": {
+    "required": "La contraseña es obligatoria",
+    "isEqual": "Las contraseñas no coinciden",
+    "minLength": "La contraseña es demasiado corta",
+    "maxLength": "La contraseña es demasiado larga"
+  }
+}
