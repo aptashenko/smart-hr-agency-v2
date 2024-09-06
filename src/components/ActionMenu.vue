@@ -10,7 +10,12 @@
     <p class="text-center text-[16px] font-[400] leading-[1.48] opacity-50 mb-[20px] min-[768px]:text-[24px]">
       {{texts[product].text}}
     </p>
-    <base-button class="mx-auto block">
+    <base-button
+        :href="texts[product].href"
+        target="_blank"
+        class="mx-auto block w-fit"
+        @click="texts[product].action"
+    >
       {{texts[product].cta}}
     </base-button>
   </div>
@@ -20,23 +25,28 @@
 import BaseButton from "@/components/ui/base/BaseButton.vue";
 import {computed, ref} from "vue";
 import {useI18n} from "vue-i18n";
+import {useModals} from "@/composables/useModals.js";
 const product = ref(0);
-const { t } = useI18n()
+const { t } = useI18n();
+const { openGetJob, openFindTalent } = useModals()
 const texts = computed(() => ([
   {
     label: t('landing.actionMenu.companies.label'),
     text: t('landing.actionMenu.companies.description'),
-    cta: t('header.actions.findTalent')
+    cta: t('header.actions.findTalent'),
+    action: openFindTalent,
   },
   {
     label: t('landing.actionMenu.specialists.label'),
     text: t('landing.actionMenu.specialists.description'),
-    cta: t('header.actions.getJob')
+    cta: t('header.actions.getJob'),
+    action: openGetJob
   },
   {
     label: t('landing.actionMenu.partners.label'),
     text: t('landing.actionMenu.partners.description'),
-    cta: '?????'
+    cta: t('header.actions.apply'),
+    href: 'https://t.me/kott_a'
   },
 ]))
 </script>

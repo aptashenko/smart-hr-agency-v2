@@ -7,6 +7,7 @@
   },
   "actions": {
     "findTalent": "Find talent",
-    "getJob": "Get a job"
+    "getJob": "Get a job",
+    "apply": "Apply"
   }
 }
