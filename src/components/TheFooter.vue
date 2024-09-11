@@ -1,5 +1,5 @@
 <template>
- <div class="px-[20px] pb-[20px] min-[768px]:px-[100px]">
+ <div class="px-[20px] pb-[20px]">
    <div class="flex items-center gap-[8px] mb-[24px]">
      <svg-icon name="union" class="flex-shrink-0" />
      <p class="text-[16px] font-[400] leading-[1.48]">A Better Career</p>
@@ -35,7 +35,7 @@
        </div>
      </div>
      <div class="max-[768px]:hidden flex flex-col items-end gap-[24px]">
-       <locale-changer class="!text-[#00000080]" dropdown="bottom"  />
+       <locale-changer class="!text-[#00000080]"  />
        <div class="flex items-center gap-[16px]">
          <a href="https://t.me/smarthr_agency_news" target="_blank">
            <svg-icon name="telegram" />
@@ -63,6 +63,4 @@ const instagramLink = computed(() => ({
   en: 'https://www.instagram.com/smarthr_agency_eng/',
   es: 'https://www.instagram.com/smarthr_agency_eng/'
 }[currentLocale.value]))
-
-console.log
 </script>

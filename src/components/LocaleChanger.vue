@@ -12,25 +12,25 @@
     <transition name="fade">
       <div v-if="langsList">
         <div class="fixed top-0 left-0 h-[100vh] w-[100vw] z-[1]" @click="toggleLangs" />
-        <ul class="z-[2] bg-[#fff] rounded-[12px] absolute p-[8px]" :class="[dropdown === 'top' ? 'bottom-[150%]' : 'top-[150%] min-w-[135px] right-0']">
-          <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]"
+        <ul class="z-[2] bg-[#fff] flex flex-col gap-[8px] rounded-[12px] absolute py-[12px] p-[8px]" :class="[dropdown === 'top' ? 'bottom-[150%]' : 'top-[150%] min-w-[135px] right-0']">
+          <li class="rounded-[4px] py-[2px] px-[8px]"
               :class="{'bg-[#00000014]': currentLocale === 'en'}"
           >
-            <button class="text-[14px] text-[#000]" @click="switchLanguage('en')">
+            <button class="text-[14px] flex items-center gap-[8px] text-[#000] leading-[21px]" @click="switchLanguage('en')">
               English
             </button>
           </li>
-          <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]"
+          <li class="rounded-[4px] py-[2px] px-[8px]"
               :class="{'bg-[#00000014]': currentLocale === 'ru'}"
           >
-            <button class="text-[14px] text-[#000]" @click="switchLanguage('ru')">
+            <button class="text-[14px] flex items-center gap-[8px] text-[#000] leading-[21px]" @click="switchLanguage('ru')">
               Русский <span class="text-[12px] opacity-40">Russian</span>
             </button>
           </li>
-          <li class="flex items-center justify-start rounded-[4px] py-[2px] px-[8px]"
+          <li class="justify-start rounded-[4px] py-[2px] px-[8px]"
               :class="{'bg-[#00000014]': currentLocale === 'es'}"
           >
-            <button class="text-[14px] text-[#000]" @click="switchLanguage('es')">
+            <button class="text-[14px] flex items-center gap-[8px] text-[#000] leading-[21px]" @click="switchLanguage('es')">
               Español <span class="text-[12px] opacity-40">Spanish</span>
             </button>
           </li>

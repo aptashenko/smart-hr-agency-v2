@@ -1,17 +1,22 @@
 {
   "hero": {
     "main_title": {
-      "line_1": "El enfoque SMART",
-      "line_2": ", las innovaciones",
-      "line_3": "y el servicio",
-      "line_4": "orientado al",
-      "line_5": "cliente"
+      "line_1": "Connecting",
+      "line_2": "top",
+      "line_3": "talent",
+      "line_4": "with",
+      "line_5": "leading",
+      "line_6": "employers"
     },
     "subtitle": "Reclutando profesionales que hagan avanzar tu negocio. Organizando todo para minimizar tu tiempo y esfuerzo en el proceso de contratación. Ayudando a las empresas a atraer empleados valiosos y a los profesionales talentosos a encontrar los mejores empleadores."
   },
   "whom": {
     "title": "¿A quiénes reclutamos?",
-    "subtitle": "Encontramos personas capaces de desarrollar, impulsar y hacer crecer tu negocio."
+    "subtitle": "Encontramos personas capaces de desarrollar, impulsar y hacer crecer tu negocio.",
+    "different": {
+      "title": "Qué nos<br>hace diferentes",
+      "subtitle": "y lo que significa para ti"
+    }
   },
   "how": {
     "title": "¿Cómo trabajamos?",

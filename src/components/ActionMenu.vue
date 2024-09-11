@@ -13,7 +13,7 @@
     <base-button
         :href="texts[product].href"
         target="_blank"
-        class="mx-auto block w-fit"
+        class="mx-auto block w-fit bg-[#00000033] border-none"
         @click="texts[product].action"
     >
       {{texts[product].cta}}

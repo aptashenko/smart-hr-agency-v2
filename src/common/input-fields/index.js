@@ -54,6 +54,14 @@ const linkedin = {
  serverError: ''
 }
 
+const promocode = {
+ id: 'promocode',
+ value: '',
+ valid: false,
+ validationError: '',
+ serverError: ''
+}
+
 
 
 export default {
@@ -63,5 +71,6 @@ export default {
  lName,
  companyName,
  linkedin,
- telegram
+ telegram,
+ promocode
 }

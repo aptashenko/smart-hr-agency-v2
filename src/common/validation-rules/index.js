@@ -59,6 +59,11 @@ const linkedin = {
  maxLength: maxLength(15),
 }
 
+const promocode = {
+ minLength: minLength(1),
+ maxLength: maxLength(1000),
+}
+
 export default {
  password: {value: password},
  phone: {value: phone},
@@ -68,5 +73,6 @@ export default {
  companyName: {value: companyName},
  message: {value: message},
  telegram: {value: telegram},
- linkedin: {value: linkedin}
+ linkedin: {value: linkedin},
+ promocode: {value: promocode},
 }

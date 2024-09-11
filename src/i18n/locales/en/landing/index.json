@@ -3,18 +3,19 @@
     "main_title": {
       "line_1": "Connecting",
       "line_2": "top",
-      "line_3": "talent with",
-      "line_4": "leading",
-      "line_5": "employers"
+      "line_3": "talent",
+      "line_4": "with",
+      "line_5": "leading",
+      "line_6": "employers"
     },
-    "subtitle": "We select specialists who move businesses forward. We organize everything so that the hiring process for you takes place with minimal time and effort. We help companies attract irreplaceable employees, and talented specialists find top employers."
+    "subtitle": "Recruiting professionals who push your business forward. Organizing everything to minimize your time and effort in the hiring process. Helping companies attract invaluable employees and talented professionals find top employers."
   },
   "whom": {
-    "title": "Whom we find",
-    "subtitle": "We find people who are able to grow, move forward, and scale your business",
+    "title": "Who do we recruit?",
+    "subtitle": "We find people who can develop, drive and grow your business.",
     "lists": {
       "executives": {
-        "title": "Executives",
+        "title": "Management",
         "list": ["C-Level", "Director", "Team Lead"]
       },
       "business": {
@@ -22,7 +23,7 @@
         "list": ["PR", "Sales", "SMM", "SEO"]
       },
       "devs": {
-        "title": "Developers",
+        "title": "Development",
         "list": ["Python", "PHP", "JS", "React", "Node.JS"]
       },
       "digital": {
@@ -34,48 +35,18 @@
         "list": ["Media Buyer", "Account Manager", "Motion Designer", "UI/UX Designer"]
       },
       "it": {
-        "title": "IT",
+        "title": "IT sector",
         "list": ["Project Manager", "QA Engineer", "Data Analyst", "DevOps", "AI Engineer"]
       }
     },
     "different": {
-      "title": "How <br>we are<br>different",
-      "subtitle": "and what<br>does this<br>mean for<br>you",
-      "list": {
-        "convenient": {
-          "title": "Convenient service",
-          "text": "On your part, recruiting employees requires a minimum of time. A 15-20 minute call—and we will fill out the brief ourselves and clarify everything necessary. Are you comfortable communicating by voice? Accepted. Special requirements? No problem."
-        },
-        "smart": {
-          "title": "Smart approach and innovation",
-          "text": "We use a smart bot and artificial intelligence to process hundreds of resumes in minutes and find exactly the people your business needs.<br><br>3000+ resumes in the database and a smart tagging system make it possible to find candidates for regular positions on the day of application."
-        },
-        "look": {
-          "title": "We look at the task of recruiting employees globally <span class=\"font-[400] opacity-50\">and find rare specialists in non-standard places</span>",
-          "text": "We don’t just offer candidates, but find people who will develop and scale your business. Each in their place.<br><br>Along with the standard search on HH and LinkedIn, we work with professional communities and chats, connect networks and direct contacts, use creative advertising."
-        },
-        "develop": {
-          "title": "We develop our own community of HR specialists",
-          "text": "We know what the market is breathing, we keep our finger on the pulse of the industry and are always aware of the current situation with the employees you need, where to look for them and what conditions to offer so that they come to work for you and not for your competitors."
-        },
-        "experience": {
-          "title": "20 years experience",
-          "text": "We know all the inner workings of IT/digital/affiliate, all the pains of owners/CEOs and have direct access to specialists who will never appear on HeadHunter, do not shine on LinkedIn, but have the necessary experience and knowledge to move your business forward."
-        }
-      }
+      "title": "What makes<br>us different",
+      "subtitle": "and what it means<br>for you"
     }
   },
   "how": {
-    "title": "How it works",
-    "subtitle": "Impeccable service. Minimum effort and time on your part—maximum result",
-    "steps": {
-      "step_1": "A short intro call for <span class=\"font-[700] text-[#000]\">15-20 minutes</span> to find out who exactly you need.",
-      "step_2": "<span class=\"text-[#000]\">We prepare the brief </span>ourselves, agree on it with you and supplement it if necessary.",
-      "step_3": "We search, interview and test candidates completely <span class=\"font-[700] text-[#000]\">on our side.</span>",
-      "step_4": "We send to you only <span class=\"text-[#000] font-[700]\">those who have passed our selection filter</span> and ideally match your position.",
-      "step_5": "We select a new candidate for <span class=\"text-[#000] font-[700]\">free</span> within 3 months if the first one does not pass the trial period.",
-      "step_6": "You pay for our services only after the employee has successfully worked for <span class=\"text-[#000] font-[700]\">2 weeks.</span>"
-    }
+    "title": "How do we work?",
+    "subtitle": "Impeccable service. Minimum effort and time on your part—maximum result"
   },
   "actionMenu": {
     "companies": {
@@ -92,25 +63,25 @@
     }
   },
   "flexibly": {
-    "title": "If you don’t need a turnkey selection",
-    "subtitle": "We flexibly adapt to your needs and tasks",
+    "title": "If you don’t need a full end-to-end solution,",
+    "subtitle": "we can adapt to your specific needs:",
     "list": {
       "recruiter": {
-        "title": "Recruiter on a retainer",
-        "text": "We provide an experienced recruiter who will strengthen your team, connect to internal hiring processes and help find the right employees or assemble a startup/department/team."
+        "title": "Recruiter Support",
+        "text": "Bring in an expert recruiter to your team. Our experienced specialist will take care of all hiring processes and help you find the right talents or build your startup, department, or team."
       },
       "hr": {
-        "title": "HR on a retainer",
-        "text": "We assign a specialist who will establish HR processes, set up a CRM system, and digitize the corporate culture. From hiring and onboarding employees to holding corporate events and ordering merch - anything to suit your needs and requests."
+        "title": "HR Support",
+        "text": "Get an HR specialist to set up and improve your HR processes. They will handle everything from setting up a CRM system and digitizing your company culture to managing hiring, onboarding, corporate events, ordering company merch, and more."
       },
       "sourcing": {
         "title": "Sourcing",
-        "text": "We will provide 300 resumes for your request, from which you can choose suitable candidates yourself. Before getting to you, each candidate goes through our verification system, 4 psychological tests and several stages of preliminary interviews."
+        "text": "We will provide XX CVs tailored to your request, so you can choose the right candidates yourself. Before reaching you, each candidate gets verified, completes 4 psychological tests, and several stages of preliminary interviews."
       }
     }
   },
   "inTouch": {
-    "title": "Get in touch",
-    "subtitle": "We will contact you within 24 hours and begin work on finding employees for your business"
+    "title": "Submit a request",
+    "subtitle": "We will contact you within 24 hours and start our search for the perfect employees for your business."
   }
 }

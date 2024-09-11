@@ -47,6 +47,13 @@
         v-model="values.phone.value"
         :error="errors.phone"
     />
+    <base-input
+        :label="$t('forms.findTalent.promocode')"
+        :name="values.promocode.id"
+        :id="values.promocode.id"
+        v-model="values.promocode.value"
+        :error="errors.promocode"
+    />
     <base-button type="inverted" class="mx-auto block mt-[40px]">
       {{ $t('forms.findTalent.cta') }}
     </base-button>
@@ -70,6 +77,7 @@ const formValues = ref({
   phone: { ...states.phone },
   companyName: { ...states.companyName },
   telegram: { ...states.telegram },
+  promocode: { ...states.promocode }
 })
 
 const validationRules = {
@@ -78,7 +86,8 @@ const validationRules = {
   email: validation.email,
   phone: validation.phone,
   telegram: validation.telegram,
-  companyName: validation.companyName
+  companyName: validation.companyName,
+  promocode: validation.promocode
 }
 
 const onSubmit = async payload => {

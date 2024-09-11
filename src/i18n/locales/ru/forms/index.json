@@ -8,6 +8,7 @@
     "company_name": "Название компании",
     "telegram": "Telegram (необязательно)",
     "phone": "Телефон",
+    "promocode": "Промокод",
     "cta": "Отправить"
   },
   "getJob": {

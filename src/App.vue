@@ -2,10 +2,10 @@
   <the-header />
   <router-view v-slot="{ Component }">
     <transition name="fade" mode="out-in">
-      <component :is="Component" />
+      <component :is="Component" class="max-w-[1200px] mx-auto" />
     </transition>
   </router-view>
-  <the-footer />
+  <the-footer class="max-w-[1200px] mx-auto" />
   <teleport to="body">
     <base-modal-component v-if="globalModalState.component" />
   </teleport>
