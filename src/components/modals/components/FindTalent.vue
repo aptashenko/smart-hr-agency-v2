@@ -19,13 +19,13 @@
     </div>
     <div v-else>
       <h2 class="text-[44px] text-center font-[600] leading-[1.1] tracking-[-1.76px] text-[#fff] mb-[8px] min-[768px]:text-[80px] min-[768px]:tracking-[-3.2px] min-[768px]:mb-[16px]">
-        Thank you
+        {{ $t('forms.thank.title') }}
       </h2>
       <p class="text-[30px] text-center font-[300] leading-[1.1]  tracking-[-1.2px] text-[#fff] opacity-50 min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]">
-        We will be back to you shortly
+        {{ $t('forms.thank.text') }}
       </p>
       <base-button type="inverted" @click="toggleComponent" class="mx-auto block mt-[40px]">
-        Done
+        {{ $t('forms.thank.cta') }}
       </base-button>
     </div>
   </div>

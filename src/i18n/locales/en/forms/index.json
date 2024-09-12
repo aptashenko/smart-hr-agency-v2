@@ -21,5 +21,10 @@
     "telegram": "Telegram (optional)",
     "phone": "Phone",
     "cta": "Submit"
+  },
+  "thank": {
+    "title": "Thank you",
+    "text": "We will be back to you shortly",
+    "cta": "Done"
   }
 }
