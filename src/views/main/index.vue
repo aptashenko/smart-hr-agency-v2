@@ -83,7 +83,7 @@
         <span id="about" class="absolute top-[35%] h-[1px] inline-block" />
         <img :src="structureOne" loading="lazy" class="max-[768px]:hidden mx-auto"/>
         <img :src="structureOneMob" loading="lazy" class="min-[768px]:hidden"/>
-        <div class="absolute max-[768px]:hidden top-[55vw] left-0">
+        <div class="absolute max-[768px]:hidden top-[35%] left-0">
           <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]" v-html="$t('landing.whom.different.title')" />
           <p class="text-[30px] font-[300] leading-[1.1] tracking-[-1.2px] opacity-50 mb-[15px] min-[768px]:w-[488px] min-[768px]:text-[40px] min-[768px]:tracking-[-1.6px]" v-html="$t('landing.whom.different.subtitle')" />
         </div>

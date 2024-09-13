@@ -130,7 +130,7 @@
 <circle opacity="0.2" cx="499" cy="196" r="3" fill="black"/>
 <circle opacity="0.2" cx="499" cy="671" r="3" fill="black"/>
 <circle opacity="0.2" cx="499" cy="1308" r="3" fill="black"/>
-<circle opacity="0.2" cx="594" cy="1343" r="3" fill="black"/>
+<circle opacity="0.2" cx="601" cy="1463" r="3" fill="black"/>
 <circle opacity="0.2" cx="499" cy="1093" r="3" fill="black"/>
 <circle opacity="0.2" cx="712" cy="465" r="3" fill="black"/>
 <path d="M499 839V424C499 410.745 488.255 400 475 400H316C302.745 400 292 389.255 292 376V200C292 186.745 281.255 176 268 176H193" stroke="black" stroke-linejoin="bevel"/>
