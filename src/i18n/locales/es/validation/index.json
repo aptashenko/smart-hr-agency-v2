@@ -47,5 +47,15 @@
     "isEqual": "Las contraseñas no coinciden",
     "minLength": "La contraseña es demasiado corta",
     "maxLength": "La contraseña es demasiado larga"
+  },
+  "telegram": {
+    "required": "El campo es obligatorio",
+    "minLength": "El valor es demasiado corto",
+    "maxLength": "El valor es demasiado largo"
+  },
+  "linkedin": {
+    "required": "El campo es obligatorio",
+    "minLength": "El valor es demasiado corto",
+    "maxLength": "El valor es demasiado largo"
   }
 }

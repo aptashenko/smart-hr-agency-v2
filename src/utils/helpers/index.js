@@ -41,3 +41,13 @@ export function debounce(func, wait) {
 export function getRandomId() {
   return 'id-' + Math.random().toString(36).substring(2, 16);
 }
+
+export const noDigits = (event) => {
+  if ("1234567890".indexOf(event.key) != -1)
+    event.preventDefault();
+}
+
+export const phoneValidation = (event) => {
+  if ("+1234567890".indexOf(event.key) === -1 && event.key !== 'Backspace')
+    event.preventDefault();
+}

@@ -7,6 +7,7 @@
       <input
         :name="name"
         :id="name"
+        v-bind="$attrs"
         :type="inputType"
         v-model="value"
         :placeholder="placeholder"
@@ -53,11 +54,14 @@ import states from '../../../common/input-fields/index.js';
 import { ref, computed } from 'vue';
 
 const value = defineModel();
-const error = defineModel('error');
 const props = defineProps({
   type: {
     type: String,
     default: 'text',
+  },
+  form: {
+    type: Object,
+    required: true
   },
   inverted: {
     type: Boolean,
@@ -86,7 +90,10 @@ const props = defineProps({
 });
 
 const onFocus = () => {
-  error.value = '';
+  const formInput = Object.values(props.form);
+  const input = formInput.find(item => item.id === props.name)
+  input['validationError'] = '';
+  input['serverError'] = '';
 };
 const { isFocused, changeEvent, focusEvent } = useFocusInput({
   focus: onFocus,

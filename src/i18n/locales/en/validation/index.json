@@ -36,6 +36,16 @@
     "maxLength": "Email is too long",
     "email": "it's not email"
   },
+  "telegram": {
+    "required": "Field is required",
+    "minLength": "Value is too short",
+    "maxLength": "Value is too long"
+  },
+  "linkedin": {
+    "required": "Field is required",
+    "minLength": "Value is too short",
+    "maxLength": "Value is too long"
+  },
   "password_confirmation": {
     "required": "password is required",
     "isEqual": "passwords don't match",

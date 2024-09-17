@@ -8,6 +8,8 @@
     <base-input
         :label="$t('forms.findTalent.first_name')"
         :name="values.fName.id"
+        :onkeydown="noDigits"
+        :form="formValues"
         :id="values.fName.id"
         v-model="values.fName.value"
         :error="errors.fName"
@@ -15,6 +17,8 @@
     <base-input
         :label="$t('forms.findTalent.last_name')"
         :name="values.lName.id"
+        :onkeydown="noDigits"
+        :form="formValues"
         :id="values.lName.id"
         v-model="values.lName.value"
         :error="errors.lName"
@@ -23,6 +27,7 @@
         :label="$t('forms.findTalent.email')"
         :name="values.email.id"
         :id="values.email.id"
+        :form="formValues"
         v-model="values.email.value"
         :error="errors.email"
     />
@@ -30,6 +35,7 @@
         :label="$t('forms.findTalent.company_name')"
         :name="values.companyName.id"
         :id="values.companyName.id"
+        :form="formValues"
         v-model="values.companyName.value"
         :error="errors.companyName"
     />
@@ -37,6 +43,7 @@
         :label="$t('forms.findTalent.telegram')"
         :name="values.telegram.id"
         :id="values.telegram.id"
+        :form="formValues"
         v-model="values.telegram.value"
         :error="errors.telegram"
     />
@@ -44,6 +51,8 @@
         :label="$t('forms.findTalent.phone')"
         :name="values.phone.id"
         :id="values.phone.id"
+        :form="formValues"
+        :onkeydown="phoneValidation"
         v-model="values.phone.value"
         :error="errors.phone"
     />
@@ -51,6 +60,7 @@
         :label="$t('forms.findTalent.promocode')"
         :name="values.promocode.id"
         :id="values.promocode.id"
+        :form="formValues"
         v-model="values.promocode.value"
         :error="errors.promocode"
     />
@@ -66,7 +76,7 @@ import {ref} from "vue";
 import validation from "@/common/validation-rules/index.js";
 import BaseInput from "@/components/ui/base/BaseInput.vue";
 import BaseButton from "@/components/ui/base/BaseButton.vue";
-
+import {noDigits, phoneValidation} from "@/utils/helpers/index.js";
 
 const emit = defineEmits(['on-submit'])
 

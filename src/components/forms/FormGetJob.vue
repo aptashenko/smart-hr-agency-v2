@@ -10,6 +10,8 @@
         :label="$t('forms.getJob.first_name')"
         :name="values.fName.id"
         :id="values.fName.id"
+        :onkeydown="noDigits"
+        :form="formValues"
         v-model="values.fName.value"
         :error="errors.fName"
     />
@@ -17,6 +19,8 @@
         inverted
         :label="$t('forms.getJob.last_name')"
         :name="values.lName.id"
+        :onkeydown="noDigits"
+        :form="formValues"
         :id="values.lName.id"
         v-model="values.lName.value"
         :error="errors.lName"
@@ -26,6 +30,7 @@
         :label="$t('forms.getJob.email')"
         :name="values.email.id"
         :id="values.email.id"
+        :form="formValues"
         v-model="values.email.value"
         :error="errors.email"
     />
@@ -34,6 +39,7 @@
         :label="$t('forms.getJob.telegram')"
         :name="values.telegram.id"
         :id="values.telegram.id"
+        :form="formValues"
         v-model="values.telegram.value"
         :error="errors.telegram"
     />
@@ -41,6 +47,7 @@
         inverted
         :label="$t('forms.getJob.linkedin')"
         :name="values.linkedin.id"
+        :form="formValues"
         :id="values.linkedin.id"
         v-model="values.linkedin.value"
         :error="errors.linkedin"
@@ -49,6 +56,7 @@
         inverted
         :label="$t('forms.getJob.phone')"
         :name="values.phone.id"
+        :form="formValues"
         :id="values.phone.id"
         v-model="values.phone.value"
         :error="errors.phone"
@@ -65,6 +73,7 @@ import {ref} from "vue";
 import validation from "@/common/validation-rules/index.js";
 import BaseInput from "@/components/ui/base/BaseInput.vue";
 import BaseButton from "@/components/ui/base/BaseButton.vue";
+import {noDigits} from "@/utils/helpers/index.js";
 
 
 const emit = defineEmits(['on-submit'])
