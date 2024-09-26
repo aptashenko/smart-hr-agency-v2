@@ -19,7 +19,6 @@ import { useSwitchLanguage } from '@/composables/useSwitchLanguage.js';
 import { useModals } from '@/composables/useModals.js';
 import TheHeader from "@/components/TheHeader.vue";
 
-
 const { globalModalState } = useModals();
 const { switchLanguage } = useSwitchLanguage();
 

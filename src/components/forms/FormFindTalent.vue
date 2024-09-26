@@ -77,6 +77,7 @@ import validation from "@/common/validation-rules/index.js";
 import BaseInput from "@/components/ui/base/BaseInput.vue";
 import BaseButton from "@/components/ui/base/BaseButton.vue";
 import {noDigits, phoneValidation} from "@/utils/helpers/index.js";
+import {findPromoCode} from "@/utils/helpers/promocode-detector.js";
 
 const emit = defineEmits(['on-submit'])
 
@@ -89,6 +90,10 @@ const formValues = ref({
   telegram: { ...states.telegram },
   promocode: { ...states.promocode }
 })
+
+const promocode = findPromoCode();
+
+formValues.value.promocode.value = promocode;
 
 const validationRules = {
   fName: validation.fName,
