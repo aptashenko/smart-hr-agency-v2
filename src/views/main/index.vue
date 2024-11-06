@@ -102,7 +102,26 @@
         <img :src="structureTwoMob" class="min-[768px]:hidden"/>
       </div>
     </section>
-    <section class="px-[20px] mt-[100px] min-[768px]:mt-[180px]">
+    <section class="px-[20px] mt-[100px] min-[768px]:mt-[120px]">
+      <div class="grid md:grid-cols-2">
+        <h2 class="text-[44px] font-[600] leading-[1.1] tracking-[-1.76px] mb-[8px] min-[768px]:text-[64px] min-[768px]:tracking-[-2.56px] min-[768px]:mb-[16px]" v-html="$t('landing.offers.title')"></h2>
+        <div class="grid grid-cols-2 mt-[10px]">
+          <div>
+            <h2 class="text-[30px] leading-[33px] min-[768px]:text-[40px] min-[768px]:leading-[44px] tracking-[-4%] text-[#000] opacity-50 pb-[15px] border-b-[1px]" v-html="$t('landing.offers.option1.title')"></h2>
+            <p class="line-clamp-3 text-[14px] leading-[20px] min-[768px]:text-[16px] min-[768px]:leading-[23px] text-[#00000080] py-[18px] pr-[10px] min-[768px]:pr-[40px]" v-html="$t('landing.offers.option1.payment')"></p>
+            <p class="text-[14px] leading-[20px] min-[768px]:text-[16px] min-[768px]:leading-[23px] text-[#00000080] py-[18px] border-b-[1px] border-t-[1px] border-[#00000024]" v-html="$t('landing.offers.option1.guarantee')"></p>
+            <p class="text-[14px] leading-[20px] min-[768px]:text-[16px] min-[768px]:leading-[23px] text-[#00000080] py-[18px] pr-[30px]" v-html="$t('landing.offers.option1.commission')"></p>
+          </div>
+          <div>
+            <h2 class="text-[30px] leading-[33px] min-[768px]:text-[40px] min-[768px]:leading-[44px] tracking-[-4%] text-[#000] opacity-50 pb-[15px] border-b-[1px]" v-html="$t('landing.offers.option2.title')"></h2>
+            <p class="line-clamp-3 text-[14px] leading-[20px] min-[768px]:text-[16px] min-[768px]:leading-[23px] text-[#00000080] py-[18px] min-[768px]:pr-[40px]" v-html="$t('landing.offers.option2.payment')"></p>
+            <p class="text-[14px] leading-[20px] min-[768px]:text-[16px] min-[768px]:leading-[23px] text-[#00000080] py-[18px] border-b-[1px] border-t-[1px] border-[#00000024]" v-html="$t('landing.offers.option2.guarantee')"></p>
+            <p class="text-[14px] leading-[20px] min-[768px]:text-[16px] min-[768px]:leading-[23px] text-[#00000080] py-[18px] pr-[30px]" v-html="$t('landing.offers.option2.commission')"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-[20px] mt-[80px] min-[768px]:mt-[80px]">
       <action-menu class="min-[768px]:max-w-[800px] mx-auto" />
     </section>
     <section class="relative px-[20px] mt-[100px] min-[768px]:mt-[180px]">
@@ -199,3 +218,13 @@ const structureTwoMob = computed(() => {
 });
 
 </script>
+
+<style>
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  min-height: 7em;
+}
+</style>

@@ -57,5 +57,20 @@
   "inTouch": {
     "title": "Enviar la solicitud",
     "subtitle": "Te contactaremos en un plazo de 24 horas y comenzaremos la búsqueda de los empleados perfectos para tu empresa."
+  },
+  "offers": {
+    "title": "Nuestras<br>Ofertas",
+    "option1": {
+      "title": "Opción 1",
+      "payment": "<span class=\"font-[700] text-[#000]\">100%</span> de pago el primer día de trabajo del candidato",
+      "guarantee": "Garantía de <span class=\"font-[700] text-[#000]\">3 meses</span>",
+      "commission": "Comisión de <span class=\"font-[700] text-[#000]\">9-14%</span> de los ingresos anuales"
+    },
+    "option2": {
+      "title": "Opción 2",
+      "payment": "<span class=\"font-[700] text-[#000]\">50%</span> el primer día de trabajo, saldo restante después del primer mes",
+      "guarantee": "Sin garantía",
+      "commission": "Comisión de <span class=\"font-[700] text-[#000]\">9-14%</span> de los ingresos anuales"
+    }
   }
 }
