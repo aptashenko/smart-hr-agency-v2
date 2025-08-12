@@ -6,6 +6,7 @@ import footer from './footer';
 import header from './header';
 import landing from './landing';
 import forms from './forms';
+import offers from './offers'
 export default {
   validation,
   global,
@@ -13,5 +14,6 @@ export default {
   footer,
   header,
   landing,
-  forms
+  forms,
+  offers
 };

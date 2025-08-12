@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'privacy',
       component: () => import('@/views/legal/index.vue'),
     },
+    {
+      path: '/commercial-offer',
+      name: 'comm-offer',
+      component: () => import('@/views/commercial-offers/index.vue'),
+    }
   ],
   scrollBehavior() {
     return new Promise((resolve) => {

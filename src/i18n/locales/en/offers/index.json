@@ -1,0 +1,175 @@
+{
+  "hero": {
+    "title": "From open roles to strong teams, we've got you covered",
+    "tags": {
+      "quickly": "quickly",
+      "efficiently": "efficiently",
+      "reliably": "reliably"
+    }
+  },
+  "whyClients": {
+    "title1": "Why clients ",
+    "title2": "choose us",
+    "cards": {
+      "clientCentered": {
+        "title": "Client-centered approach",
+        "desc": "A quick 15–20 minute call is all we need to clarify your goals and expectations. No time for a call? Just send us a voice message — we’ll adapt to your needs and schedule."
+      },
+      "hiddenGems": {
+        "title": "Access to hidden gems",
+        "desc": "We find rare professionals — even those who aren't actively on the market. We use professional networks, referrals, and non-standard sourcing channels to build highly competent teams."
+      },
+      "hrCommunity": {
+        "title": "Strong HR community & deep market knowledge",
+        "desc": "We stay on top of hiring trends and can help you create competitive offers that attract top talent and outpace your competitors."
+      },
+      "aiSearch": {
+        "title": "AI-powered search & cutting-edge technology",
+        "desc": "Our AI selects candidates tailored to your business in minutes. With a database of over 3,000 resumes, we deliver top specialists on the same day — and experts within two weeks."
+      }
+    }
+  },
+  "howWeWork": {
+    "title1": "How do ",
+    "title2": "we work?",
+    "steps": {
+      "identifyingNeeds": {
+        "title": "Identifying your needs",
+        "desc": "We start with a call to understand your current goals and business challenges."
+      },
+      "aligningDetails": {
+        "title": "Aligning on the details",
+        "desc": "We prepare a detailed brief, define tasks and timelines, and sign the agreement."
+      },
+      "deliveringSolutions": {
+        "title": "Delivering solutions",
+        "desc": "Depending on the format, we handle sourcing, interviewing, and setting up hiring processes."
+      },
+      "presentingResults": {
+        "title": "Presenting results",
+        "desc": "We deliver top candidates or a fully functional management system — with explanations, analytics, and recommendations."
+      },
+      "supportingAllTheWay": {
+        "title": "Supporting you all the way",
+        "desc": "We stay with you through every stage — from offer to onboarding and full process optimization."
+      },
+      "sharingExpertise": {
+        "title": "Sharing our expertise",
+        "desc": "Once the project is complete, we provide final analytics and clear guidelines for your independent future work."
+      }
+    }
+  },
+  "services": {
+    "title1": "Our ",
+    "title2": "Services",
+    "cards": {
+      "fillingOpenRoles": {
+        "title": "Filling open roles",
+        "desc": "Ideal for <b>companies that need to quickly and reliably fill 1–2 positions</b> without getting deeply involved in the process. We take full responsibility for selecting the right candidate to match your needs.",
+        "stats": {
+          "fee": "9–14%*",
+          "feeCost": "Fee",
+          "feeNote": "(of the candidate’s annual salary)",
+          "duration": "Unlimited",
+          "durationLabel": "Duration",
+          "footnote": "* Negotiated individually"
+        },
+        "paymentOptionsTitle": "Payment options:",
+        "paymentOptions": {
+          "1": "<b>100% payment</b> on the candidate’s first working day. Includes a <b>3-month replacement guarantee</b>.",
+          "2": "<b>50% payment</b> on the candidate’s first working day, the rest after the first month. No replacement guarantee."
+        },
+        "includesTitle": "Service includes:",
+        "includes": [
+          "Market analysis",
+          "Brief preparation",
+          "Candidate sourcing",
+          "Candidate interviews",
+          "Feedback reporting",
+          "Vacancy analytics"
+        ]
+      },
+      "recruiterOnDemand": {
+        "title": "Recruiter on demand",
+        "desc": "Perfect for <b>small companies without an in-house recruiter</b> but with <b>ongoing hiring needs</b>.\u2028We handle the entire recruitment process for a fixed fee — no extra costs or need to add a new team member to your payroll.",
+        "stats": {
+          "fee": "€3,000",
+          "feeCost": "Fee",
+          "durationLabel": "Duration",
+          "duration": "3 months"
+        },
+        "includesTitle": "What’s included:",
+        "includes": [
+          "Management of up to 5 active vacancies per month",
+          "Resume screening, reference checks, interviews",
+          "End-to-end hiring support and guidance",
+          "Market research and analytics",
+          "Candidate approval and further support",
+          "Job post costs — covered by us",
+          "Full-cycle recruitment: from writing the job description to onboarding",
+          "Initial interviews and candidate evaluation",
+          "Recruitment funnel management, KPI reporting"
+        ]
+      },
+      "hrTeamOnDemand": {
+        "title": "HR Team on demand",
+        "desc": "Designed <b>for companies without an in-house HR team</b> that need to build <b>effective people management</b>.\u2028We handle employee onboarding, communication, and development — helping reduce turnover and boost engagement.",
+        "stats": {
+          "fee": "€5,000*",
+          "feeCost": "Fee",
+          "durationLabel": "Duration",
+          "duration": "3 months",
+          "footnote": "* CRM platform is billed separately"
+        },
+        "includesTitle": "What’s included:",
+        "includes": [
+          "HR process setup from scratch",
+          "Performance reviews and satisfaction surveys",
+          "Employee onboarding and support",
+          "Onboarding / offboarding setup",
+          "Organizational structure development",
+          "Process automation",
+          "Internal communications, engagement, and feedback",
+          "Employee benefits system setup",
+          "Audits, surveys, and engagement tracking"
+        ],
+        "crmTitle": "CRM platforms:",
+        "crmOptions": [
+          "We work with <b>PeopleForce</b>, <b>BambooHR</b>, and <b>AtomHRS</b>.",
+          "You can use your current system, or we’ll recommend the best solution.",
+          "At the end of the project, we provide post-project support on all HR-related matters."
+        ]
+      },
+      "recruiterPlusHR": {
+        "title": "Recruiter + HR Team",
+        "desc": "Ideal <b>for companies that need both ongoing recruitment and a full HR setup from scratch</b>. A perfect choice if you're growing fast but haven’t yet built your in-house HR team.",
+        "stats": {
+          "fee": "€7,000*",
+          "feeCost": "Fee",
+          "durationLabel": "Duration",
+          "duration": "3 months",
+          "footnote": "* CRM platform is billed separately"
+        },
+        "includesTitle": "What’s included:",
+        "includes": [
+          "Everything from the <b>“Recruiter on demand”</b> and <b>“HR Team on demand”</b> services — combined in one solution.",
+          "A comprehensive approach: recruitment + building an efficient people management system."
+        ]
+      }
+    }
+  },
+  "contacts": {
+    "title": "We know how to help<br /> your business grow",
+    "pitch": {
+      "prefix": "Contact us and get",
+      "highlight": "a free consultation."
+    },
+    "cta": "Visit our website",
+    "items": {
+      "1": { "label": "a.kot{'@'}smarthr.agency", "href": "mailto:a.kot{'@'}smarthr.agency" },
+      "2": { "label": "{'@'}kott_a", "href": "https://t.me/kott_a" },
+      "3": { "label": "smarthr_agency", "href": "https://instagram.com/smarthr_agency" },
+      "4": { "label": "linkedin", "href": "https://linkedin.com" }
+    }
+  }
+}
