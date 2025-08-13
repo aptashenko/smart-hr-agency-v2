@@ -493,9 +493,9 @@ const openModal = () => {
         </div>
       </div>
     </section>
-    <section class="bg-[#F7F8F7] pb-20">
-      <div class="relative z-[2] w-fit mx-auto">
-        <base-button @click="openModal" class="relative z-[2] border-[#FCFF7E] bg-[#FCFF7E] text-[#111113]">
+    <section class="bg-[#F7F8F7] pb-14 md:pb-16 lg:pb-20">
+      <div class="relative z-[2] w-fit mx-auto min-w-[200px]">
+        <base-button @click="openModal" class="relative z-[2] w-full !pt-3 !pb-2 !text-lg !border-[#FCFF7E] !bg-[#FCFF7E] !text-[#111113]">
           {{$t('header.actions.contactUs')}}
         </base-button>
         <div class="absolute top-[-10px] left-[-10px] right-[-10px] blur-sm bottom-[-10px] animate-pulse opacity-0 z-[-1] bg-[#FDB3F5] rounded-full" />
