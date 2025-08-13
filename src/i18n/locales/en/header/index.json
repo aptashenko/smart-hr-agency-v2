@@ -8,6 +8,7 @@
   "actions": {
     "findTalent": "Find talent",
     "getJob": "Get a job",
-    "apply": "Apply"
+    "apply": "Apply",
+    "contactUs": "Contact us"
   }
 }

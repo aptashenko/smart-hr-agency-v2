@@ -2,8 +2,11 @@
 import {useSwitchLanguage} from "@/composables/useSwitchLanguage.js";
 import {computed, onMounted} from "vue";
 import {useRoute} from "vue-router";
+import BaseButton from "@/components/ui/base/BaseButton.vue";
+import {useModals} from "@/composables/useModals.js";
 
 const { switchLanguage } = useSwitchLanguage();
+const { openFindTalent } = useModals();
 
 const route = useRoute();
 
@@ -12,6 +15,10 @@ const lang = computed(() => route.query.l ?? 'en');
 onMounted(() => {
   switchLanguage(lang.value);
 })
+
+const openModal = () => {
+  openFindTalent({chatId: import.meta.env.VITE_ADMIN_CHAT_ID})
+}
 </script>
 <template>
     <div class="relative z-[2] bg-[#FCFF7E] h-[100vh] !max-w-full overflow-hidden">
@@ -270,7 +277,7 @@ onMounted(() => {
 
             <!-- stats -->
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2">
-              <div class="stat border-[#A7C9CD] rounded-t-[16px] md:rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
+              <div class="stat border-[#A7C9CD] rounded-t-[16px] md:rounded-t-none md:!rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
                 <div class="border-[#A7C9CD] md:border-r">
                   <p class="stat-main">
                     {{$t('offers.services.cards.fillingOpenRoles.stats.fee')}}
@@ -283,7 +290,7 @@ onMounted(() => {
                   </p>
                 </div>
               </div>
-              <div class="stat rounded-b-[16px] md:rounded-r-[16px] md:!pl-0">
+              <div class="stat rounded-b-[16px] md:rounded-b-none md:!rounded-r-[16px] md:!pl-0">
                 <div class="stat-main">
                   {{$t('offers.services.cards.fillingOpenRoles.stats.duration')}}
                 </div>
@@ -350,21 +357,19 @@ onMounted(() => {
         <div class="relative z-[1] mt-8 md:mt-10 bg-[#FDB3F514] border border-[#E59DDE4D] rounded-[16px] p-5 md:p-7 lg:p-8">
 
           <div class="">
-            <h3 class="tab !text-[#CB6CC1]">Recruiter on demand</h3>
-            <p class="text-[15px] md:text-[16px] text-[#1A2B27]/80">
-
-            </p>
+            <h3 class="tab !text-[#CB6CC1]">{{$t('offers.services.cards.recruiterOnDemand.title')}}</h3>
+            <p class="text-[15px] md:text-[16px] text-[#1A2B27]/80" v-html="$t('offers.services.cards.recruiterOnDemand.desc')" />
 
             <!-- stats -->
             <!-- Статистика -->
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2">
-              <div class="stat border-[#E6CCE6] !bg-[#F3E9F3] rounded-t-[16px] md:rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
+              <div class="stat border-[#E6CCE6] !bg-[#F3E9F3] rounded-t-[16px]  md:rounded-t-none md:!rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
                 <div class="border-[#E6CCE6] md:border-r">
                   <p class="stat-main">{{$t('offers.services.cards.recruiterOnDemand.stats.fee')}}</p>
                   <p class="text-[#AE5EA5]">{{$t('offers.services.cards.recruiterOnDemand.stats.feeCost')}}</p>
                 </div>
               </div>
-              <div class="stat rounded-b-[16px] !bg-[#F3E9F3] md:rounded-r-[16px] md:!pl-0">
+              <div class="stat rounded-b-[16px] !bg-[#F3E9F3] md:rounded-b-none md:!rounded-r-[16px] md:!pl-0">
                 <div class="stat-main">{{$t('offers.services.cards.recruiterOnDemand.stats.duration')}}</div>
                 <div class="text-[#AE5EA5]">{{$t('offers.services.cards.recruiterOnDemand.stats.durationLabel')}}</div>
               </div>
@@ -397,13 +402,13 @@ onMounted(() => {
 
             <!-- stats -->
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2">
-              <div class="stat border-[#C9CF9F] !bg-[#EFF1DF] rounded-t-[16px] md:rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
+              <div class="stat border-[#C9CF9F] !bg-[#EFF1DF] rounded-t-[16px]  md:rounded-t-none md:!rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
                 <div class="border-[#C9CF9F] md:border-r">
                   <p class="stat-main">{{$t('offers.services.cards.hrTeamOnDemand.stats.fee')}}</p>
                   <p class="text-[#7E803E]">{{$t('offers.services.cards.hrTeamOnDemand.stats.feeCost')}}</p>
                 </div>
               </div>
-              <div class="stat rounded-b-[16px] !bg-[#EFF1DF] md:rounded-r-[16px] md:!pl-0">
+              <div class="stat rounded-b-[16px] !bg-[#EFF1DF] md:rounded-b-none md:!rounded-r-[16px] md:!pl-0">
                 <div class="stat-main">{{$t('offers.services.cards.hrTeamOnDemand.stats.duration')}}</div>
                 <div class="text-[#7E803E]">{{$t('offers.services.cards.hrTeamOnDemand.stats.durationLabel')}}</div>
               </div>
@@ -458,13 +463,13 @@ onMounted(() => {
 
             <!-- stats -->
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2">
-              <div class="stat border-[#95D7C4] !bg-[#D7F0E9] rounded-t-[16px] md:rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
+              <div class="stat border-[#95D7C4] !bg-[#D7F0E9] rounded-t-[16px]  md:rounded-t-none md:!rounded-l-[16px] border-b md:border-none md:py-2 md:!pr-0">
                 <div class="border-[#95D7C4] md:border-r">
                   <p class="stat-main">{{$t('offers.services.cards.recruiterPlusHR.stats.fee')}}</p>
                   <p class="text-[#2D7F66]">{{$t('offers.services.cards.recruiterPlusHR.stats.feeCost')}}</p>
                 </div>
               </div>
-              <div class="stat rounded-b-[16px] !bg-[#D7F0E9] md:rounded-r-[16px] md:!pl-0">
+              <div class="stat rounded-b-[16px] !bg-[#D7F0E9] md:rounded-b-none md:!rounded-r-[16px] md:!pl-0">
                 <div class="stat-main">{{$t('offers.services.cards.recruiterPlusHR.stats.duration')}}</div>
                 <div class="text-[#2D7F66]">{{$t('offers.services.cards.recruiterPlusHR.stats.durationLabel')}}</div>
               </div>
@@ -486,6 +491,14 @@ onMounted(() => {
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="bg-[#F7F8F7] pb-20">
+      <div class="relative z-[2] w-fit mx-auto">
+        <base-button @click="openModal" class="relative z-[2] border-[#FCFF7E] bg-[#FCFF7E] text-[#111113]">
+          {{$t('header.actions.contactUs')}}
+        </base-button>
+        <div class="absolute top-[-10px] left-[-10px] right-[-10px] blur-sm bottom-[-10px] animate-pulse opacity-0 z-[-1] bg-[#FDB3F5] rounded-full" />
       </div>
     </section>
     <section class="relative bg-[#FCFF7E] text-[#131312]">

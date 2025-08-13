@@ -5,7 +5,7 @@ export default {
   },
   findTalent: {
     component: 'FindTalent',
-    props: {transition: {name: 'from-right'}, selfClick: false}
+    props: {transition: {name: 'from-right'}, selfClick: false, chatId: import.meta.env.VITE_CHAT_ID}
   },
   getJob: {
     component: 'GetJob',

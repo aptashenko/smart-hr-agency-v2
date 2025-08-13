@@ -42,8 +42,11 @@ import BaseInput from "@/components/ui/base/BaseInput.vue";
 const { toggleComponent } = useModals();
 const { onSubmit } = useSendOrder()
 const formSent = ref(false)
+const props = defineProps({
+  chatId: Number || null
+})
 
 const onFormSubmit = (payload) => {
-  onSubmit(payload, () => {formSent.value = true})
+  onSubmit(payload, () => {formSent.value = true}, props.chatId)
 }
 </script>

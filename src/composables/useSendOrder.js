@@ -3,11 +3,11 @@ import {useI18n} from "vue-i18n";
 
 export function useSendOrder() {
     const { t } = useI18n();
-    const onSubmit = async (payload, onSuccess) => {
+    const onSubmit = async (payload, onSuccess, chatId) => {
         const { fName, lName, email, telegram, linkedin, phone, promocode, companyName } = payload;
         const orderMessage =
             `Новая заявка!%0AИмя: ${fName}%0AФамилия: ${lName}%0AEmail: ${email}%0ATelegram: ${telegram || '-'}%0ALinkedIn: ${linkedin || '-'}%0AТелефон: ${phone}%0AНазвание компании: ${companyName || '-'}%0AПромокод: ${promocode || '-'}`;
-        const status = await telegramBotSend(orderMessage)
+        const status = await telegramBotSend(orderMessage, chatId)
         if (status === 200 || status === 201) {
             onSuccess()
         }
