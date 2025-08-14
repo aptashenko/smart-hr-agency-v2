@@ -1,0 +1,175 @@
+{
+  "hero": {
+    "title": "Desde vacantes abiertas hasta equipos sólidos, lo tenemos cubierto",
+    "tags": {
+      "quickly": "rápidamente",
+      "efficiently": "eficientemente",
+      "reliably": "con fiabilidad"
+    }
+  },
+  "whyClients": {
+    "title1": "Por qué los clientes ",
+    "title2": "nos eligen",
+    "cards": {
+      "clientCentered": {
+        "title": "Enfoque centrado en el cliente",
+        "desc": "Solo necesitamos una llamada rápida de 15–20 minutos para aclarar sus objetivos y expectativas. ¿Sin tiempo para una llamada? Envíenos un mensaje de voz — nos adaptaremos a sus necesidades y horario."
+      },
+      "hiddenGems": {
+        "title": "Acceso a talentos ocultos",
+        "desc": "Encontramos profesionales poco comunes, incluso aquellos que no están buscando activamente trabajo. Usamos redes profesionales, referencias y canales de búsqueda no convencionales para construir equipos altamente competentes."
+      },
+      "hrCommunity": {
+        "title": "Comunidad sólida de RRHH y profundo conocimiento del mercado",
+        "desc": "Nos mantenemos al día con las tendencias de contratación y podemos ayudarle a crear ofertas competitivas que atraigan al mejor talento y superen a su competencia."
+      },
+      "aiSearch": {
+        "title": "Búsqueda impulsada por IA y tecnología de vanguardia",
+        "desc": "Nuestra IA selecciona candidatos adaptados a su negocio en minutos. Con una base de datos de más de 3.000 currículums, entregamos especialistas el mismo día y expertos en un plazo de dos semanas."
+      }
+    }
+  },
+  "howWeWork": {
+    "title1": "¿Cómo ",
+    "title2": "trabajamos?",
+    "steps": {
+      "identifyingNeeds": {
+        "title": "Identificando sus necesidades",
+        "desc": "Comenzamos con una llamada para comprender sus objetivos actuales y desafíos empresariales."
+      },
+      "aligningDetails": {
+        "title": "Alineando los detalles",
+        "desc": "Preparamos un informe detallado, definimos tareas y plazos, y firmamos el acuerdo."
+      },
+      "deliveringSolutions": {
+        "title": "Entregando soluciones",
+        "desc": "Dependiendo del formato, nos encargamos de la búsqueda, entrevistas y configuración de los procesos de contratación."
+      },
+      "presentingResults": {
+        "title": "Presentando resultados",
+        "desc": "Entregamos a los mejores candidatos o un sistema de gestión completamente funcional, con explicaciones, análisis y recomendaciones."
+      },
+      "supportingAllTheWay": {
+        "title": "Acompañándole en todo el proceso",
+        "desc": "Le apoyamos en cada etapa, desde la oferta hasta la incorporación y la optimización completa del proceso."
+      },
+      "sharingExpertise": {
+        "title": "Compartiendo nuestra experiencia",
+        "desc": "Una vez finalizado el proyecto, le proporcionamos análisis finales y pautas claras para que pueda trabajar de forma independiente en el futuro."
+      }
+    }
+  },
+  "services": {
+    "title1": "Nuestros ",
+    "title2": "Servicios",
+    "cards": {
+      "fillingOpenRoles": {
+        "title": "Cubrir vacantes abiertas",
+        "desc": "Ideal para <b>empresas que necesitan cubrir 1–2 puestos rápida y confiablemente</b> sin involucrarse profundamente en el proceso. Asumimos toda la responsabilidad de seleccionar al candidato adecuado para sus necesidades.",
+        "stats": {
+          "fee": "9–14%*",
+          "feeCost": "Tarifa",
+          "feeNote": "(del salario anual del candidato)",
+          "duration": "Ilimitado",
+          "durationLabel": "Duración",
+          "footnote": "* Negociado individualmente"
+        },
+        "paymentOptionsTitle": "Opciones de pago:",
+        "paymentOptions": {
+          "1": "<b>100% del pago</b> el primer día laboral del candidato. Incluye una <b>garantía de reemplazo de 3 meses</b>.",
+          "2": "<b>50% del pago</b> el primer día laboral del candidato, el resto después del primer mes. Sin garantía de reemplazo."
+        },
+        "includesTitle": "El servicio incluye:",
+        "includes": [
+          "Análisis de mercado",
+          "Preparación del informe",
+          "Búsqueda de candidatos",
+          "Entrevistas a candidatos",
+          "Informes de retroalimentación",
+          "Análisis de vacantes"
+        ]
+      },
+      "recruiterOnDemand": {
+        "title": "Reclutador bajo demanda",
+        "desc": "Perfecto para <b>pequeñas empresas sin un reclutador interno</b> pero con <b>necesidades de contratación continuas</b>. Gestionamos todo el proceso de reclutamiento por una tarifa fija, sin costes adicionales ni necesidad de añadir un nuevo miembro a la nómina.",
+        "stats": {
+          "fee": "€3,000",
+          "feeCost": "Tarifa",
+          "durationLabel": "Duración",
+          "duration": "3 meses"
+        },
+        "includesTitle": "Incluye:",
+        "includes": [
+          "Gestión de hasta 5 vacantes activas por mes",
+          "Revisión de currículums, referencias y entrevistas",
+          "Soporte y guía completa en la contratación",
+          "Investigación de mercado y análisis",
+          "Aprobación de candidatos y soporte posterior",
+          "Costes de publicación de ofertas — cubiertos por nosotros",
+          "Reclutamiento de ciclo completo: desde la redacción de la oferta hasta la incorporación",
+          "Entrevistas iniciales y evaluación de candidatos",
+          "Gestión del embudo de contratación, informes KPI"
+        ]
+      },
+      "hrTeamOnDemand": {
+        "title": "Equipo de RRHH bajo demanda",
+        "desc": "Diseñado <b>para empresas sin un equipo interno de RRHH</b> que necesitan crear una <b>gestión de personas eficaz</b>. Nos encargamos de la incorporación, comunicación y desarrollo de empleados, ayudando a reducir la rotación y aumentar la implicación.",
+        "stats": {
+          "fee": "€5,000*",
+          "feeCost": "Tarifa",
+          "durationLabel": "Duración",
+          "duration": "3 meses",
+          "footnote": "* La plataforma CRM se factura por separado"
+        },
+        "includesTitle": "Incluye:",
+        "includes": [
+          "Configuración de procesos de RRHH desde cero",
+          "Evaluaciones de rendimiento y encuestas de satisfacción",
+          "Incorporación y soporte a empleados",
+          "Configuración de procesos de entrada y salida",
+          "Desarrollo de la estructura organizativa",
+          "Automatización de procesos",
+          "Comunicación interna, implicación y retroalimentación",
+          "Implementación de sistema de beneficios",
+          "Auditorías, encuestas y seguimiento de implicación"
+        ],
+        "crmTitle": "Plataformas CRM:",
+        "crmOptions": [
+          "Trabajamos con <b>PeopleForce</b>, <b>BambooHR</b> y <b>AtomHRS</b>.",
+          "Puede usar su sistema actual o le recomendaremos la mejor solución.",
+          "Al final del proyecto, proporcionamos soporte posterior en todos los temas relacionados con RRHH."
+        ]
+      },
+      "recruiterPlusHR": {
+        "title": "Reclutador + Equipo de RRHH",
+        "desc": "Ideal <b>para empresas que necesitan tanto contratación continua como la creación de un sistema de RRHH desde cero</b>. Una elección perfecta si está creciendo rápidamente pero aún no ha creado su equipo interno de RRHH.",
+        "stats": {
+          "fee": "€7,000*",
+          "feeCost": "Tarifa",
+          "durationLabel": "Duración",
+          "duration": "3 meses",
+          "footnote": "* La plataforma CRM se factura por separado"
+        },
+        "includesTitle": "Incluye:",
+        "includes": [
+          "Todo lo de <b>“Reclutador bajo demanda”</b> y <b>“Equipo de RRHH bajo demanda”</b> — combinado en una sola solución.",
+          "Un enfoque integral: contratación + creación de un sistema de gestión de personas eficiente."
+        ]
+      }
+    }
+  },
+  "contacts": {
+    "title": "Sabemos cómo ayudar<br /> a que su empresa crezca",
+    "pitch": {
+      "prefix": "Contáctenos y obtenga",
+      "highlight": "una consulta gratuita."
+    },
+    "cta": "Visite nuestro sitio web",
+    "items": {
+      "1": { "label": "a.kot{'@'}smarthr.agency", "href": "mailto:a.kot{'@'}smarthr.agency" },
+      "2": { "label": "{'@'}kott_a", "href": "https://t.me/kott_a" },
+      "3": { "label": "smarthr_agency", "href": "https://instagram.com/smarthr_agency" },
+      "4": { "label": "linkedin", "href": "https://linkedin.com/company/smart-hr-agency/" }
+    }
+  }
+}

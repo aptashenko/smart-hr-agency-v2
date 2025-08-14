@@ -1,20 +1,9 @@
 <script setup>
-import {useSwitchLanguage} from "@/composables/useSwitchLanguage.js";
-import {computed, onMounted} from "vue";
-import {useRoute} from "vue-router";
 import BaseButton from "@/components/ui/base/BaseButton.vue";
 import {useModals} from "@/composables/useModals.js";
 
-const { switchLanguage } = useSwitchLanguage();
 const { openFindTalent } = useModals();
 
-const route = useRoute();
-
-const lang = computed(() => route.query.l ?? 'en');
-
-onMounted(() => {
-  switchLanguage(lang.value);
-})
 
 const openModal = () => {
   openFindTalent({chatId: import.meta.env.VITE_ADMIN_CHAT_ID})
@@ -871,13 +860,12 @@ const openModal = () => {
 .desc {
   @apply mt-3 md:mt-4 text-[#B7B7B7] text-[14px] md:text-[15px] leading-relaxed;
 }
-/* Плейсхолдер под иконку — поставь свой SVG внутрь или замени весь span */
 .icon {
   @apply shrink-0 mt-1 inline-flex h-9 w-9 rounded-full bg-[#1A1A1A] ring-1 ring-[#2A2A2A];
 }
 .num {
   @apply text-[32px] md:text-[40px] font-[800] leading-none tracking-[-1px];
-  color: #FDB3F5; /* акцент как в макете */
+  color: #FDB3F5;
 }
 .tab {
   @apply inline-flex items-center rounded-t-xl
@@ -903,5 +891,3 @@ const openModal = () => {
   @apply mr-2 text-[#56C9BA];
 }
 </style>
-<script setup lang="ts">
-</script>

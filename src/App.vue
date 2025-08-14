@@ -1,5 +1,5 @@
 <template>
-  <the-header v-if="route.name !== 'comm-offer'" />
+  <the-header />
   <router-view v-slot="{ Component }">
     <component :is="Component" class="max-w-[1200px] mx-auto" />
   </router-view>

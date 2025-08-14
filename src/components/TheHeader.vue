@@ -2,9 +2,9 @@
   <div
       id="header"
       class="relative w-full flex items-start justify-end z-[5] transition top-0"
-      :class="[scrolled ? 'sticky bg-[#fff] max-[768px]:py-[8px] py-[13px] px-[12px]' : 'static max-[768px]:!p-[14px] p-[20px]']"
+      :class="[scrolled ? 'sticky bg-[#fff] max-[768px]:py-[8px] py-[13px] px-[12px]' : 'static max-[768px]:!p-[14px] p-[20px]', {'!absolute top-0 left-0 w-full': route.name === 'comm-offer'}]"
   >
-    <router-link :to="{name: 'main', hash: '#'}" class="absolute left-[20px] flex-1" :class="[scrolled ? 'top-[13px]' : 'top-[20px]']">
+    <router-link v-if="route.name !== 'comm-offer'" :to="{name: 'main', hash: '#'}" class="absolute left-[20px] flex-1" :class="[scrolled ? 'top-[13px]' : 'top-[20px]']">
       <svg-icon name="logo" :scrolled="scrolled" />
     </router-link>
     <template v-if="router.currentRoute.value.name === 'main'">
@@ -61,6 +61,9 @@
           </base-button>
         </div>
       </div>
+    </template>
+    <template v-if="route.name === 'comm-offer'">
+      <locale-changer v-if="!scrolled" class="!text-[#00000080]" dropdown="bottom" />
     </template>
   </div>
 </template>
